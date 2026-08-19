@@ -8,6 +8,11 @@
   --accent: #087663;
   --acid: #a8df55;
   --green: #62c85b;
+  --text-body: clamp(16px, 0.2vw + 15.5px, 17px);
+  --text-callout: 16px;
+  --text-subhead: 15px;
+  --text-footnote: 13px;
+  --text-caption: 12px;
   --sans: var(--font-sans), sans-serif;
   --serif: var(--font-serif), serif;
   --mono: var(--font-mono), monospace;
@@ -26,7 +31,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: var(--text-body);
   line-height: 1.55;
   text-rendering: optimizeLegibility;
 }
@@ -98,7 +103,7 @@ h3 {
   display: flex;
   gap: 30px;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: var(--text-caption);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -130,7 +135,7 @@ h3 {
 .header-cta {
   justify-self: end;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: var(--text-caption);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -155,7 +160,7 @@ h3 {
 .eyebrow,
 .section-number {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: var(--text-caption);
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -263,7 +268,7 @@ h3 {
   gap: 10px;
   align-items: flex-start;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: var(--text-caption);
   letter-spacing: 0.05em;
   line-height: 1.5;
   text-transform: uppercase;
@@ -280,95 +285,59 @@ h3 {
   animation: pulse 2.6s ease-in-out infinite;
 }
 
-.signal-card {
+.profile-portrait {
   position: relative;
   width: min(100%, 270px);
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 5;
+  margin-block: 34px;
   margin-inline: auto;
   border: 1px solid var(--line);
-  border-radius: 50%;
-}
-
-.signal-card::before,
-.signal-card::after {
-  position: absolute;
-  content: "";
-  background: var(--line);
-}
-
-.signal-card::before {
-  top: 50%;
-  right: -30px;
-  left: -30px;
-  height: 1px;
-}
-
-.signal-card::after {
-  top: -30px;
-  bottom: -30px;
-  left: 50%;
-  width: 1px;
-}
-
-.signal-core {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  display: grid;
-  width: 76px;
-  height: 76px;
-  place-items: center;
-  border-radius: 50%;
-  color: var(--paper);
   background: var(--ink);
-  font-family: var(--mono);
-  font-size: 13px;
-  letter-spacing: -0.08em;
-  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
-.signal-orbit {
+.profile-portrait img {
+  object-fit: cover;
+  object-position: 70% center;
+}
+
+.profile-portrait figcaption {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.orbit-one {
-  width: 55%;
-  height: 55%;
-}
-
-.orbit-two {
-  width: 82%;
-  height: 82%;
-  border-color: var(--line);
-}
-
-.signal-label {
-  position: absolute;
-  z-index: 3;
-  padding: 4px 7px;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 12px;
   color: var(--paper);
-  background: var(--accent);
-  font-family: var(--mono);
-  font-size: 8px;
-  letter-spacing: 0.08em;
+  background: color-mix(in srgb, var(--ink) 90%, transparent);
+  backdrop-filter: blur(8px);
 }
 
-.signal-cloud { top: 8%; left: 52%; }
-.signal-ai { right: 1%; bottom: 22%; }
-.signal-product { bottom: 7%; left: 7%; }
+.profile-portrait figcaption span,
+.profile-portrait figcaption strong {
+  display: block;
+}
+
+.profile-portrait figcaption span {
+  font-family: var(--mono);
+  font-size: var(--text-caption);
+  letter-spacing: 0.1em;
+}
+
+.profile-portrait figcaption strong {
+  margin-top: 4px;
+  font-family: var(--serif);
+  font-size: var(--text-callout);
+  font-weight: 500;
+  line-height: 1.15;
+}
 
 .aside-note {
   max-width: 250px;
   margin-bottom: 0;
   padding-top: 22px;
   border-top: 1px solid var(--line);
-  font-size: 13px;
+  font-size: var(--text-subhead);
 }
 
 .reveal {
@@ -435,7 +404,7 @@ h3 {
 .principle p {
   margin-top: 52px;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: var(--text-body);
 }
 
 .work-section {
@@ -484,7 +453,7 @@ h3 {
 .project-type,
 .tag-list {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: var(--text-caption);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -515,7 +484,7 @@ h3 {
   max-width: 620px;
   margin-bottom: 0;
   color: rgba(242, 238, 229, 0.72);
-  font-size: 15px;
+  font-size: var(--text-callout);
 }
 
 .tag-list {
@@ -548,7 +517,7 @@ h3 {
 .timeline-period,
 .timeline-company {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: var(--text-caption);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -574,7 +543,7 @@ h3 {
   margin: 0;
   padding-left: 18px;
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: var(--text-callout);
 }
 
 .timeline-detail li + li { margin-top: 8px; }
@@ -627,7 +596,7 @@ h3 {
 
 .capability-card p {
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: var(--text-subhead);
 }
 
 .flagship-credentials {
@@ -665,7 +634,7 @@ h3 {
 .credential-tier,
 .credential-proof {
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: var(--text-caption);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -688,7 +657,7 @@ h3 {
 .flagship-card > div:nth-child(2) > p:last-child {
   margin-bottom: 0;
   color: rgba(242, 238, 229, 0.68);
-  font-size: 12px;
+  font-size: var(--text-subhead);
 }
 
 .credential-proof {
@@ -726,7 +695,7 @@ h3 {
 .learning-ledger article > span {
   color: var(--accent);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: var(--text-caption);
 }
 
 .learning-ledger h3 {
@@ -742,7 +711,7 @@ h3 {
   margin-bottom: 0;
   color: var(--ink-soft);
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: var(--text-caption);
   letter-spacing: 0.04em;
   line-height: 1.45;
   text-transform: uppercase;
@@ -779,7 +748,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: var(--text-caption);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -803,13 +772,13 @@ h3 {
 
 .article-card p {
   margin-bottom: 30px;
-  font-size: 13px;
+  font-size: var(--text-callout);
 }
 
 .article-link {
   margin-top: auto;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: var(--text-caption);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -842,7 +811,7 @@ h3 {
   justify-content: flex-end;
   gap: 11px;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: var(--text-caption);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -857,7 +826,7 @@ h3 {
   display: inline-block;
   margin-bottom: 96px;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: var(--text-caption);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -942,7 +911,7 @@ h3 {
 
 .article-signoff p {
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: var(--text-subhead);
 }
 
 /* Resume preview */
@@ -966,7 +935,7 @@ h3 {
 .cv-toolbar-note {
   margin-bottom: 0;
   color: #60635e;
-  font-size: 13px;
+  font-size: var(--text-subhead);
 }
 
 .button-dark {
@@ -1438,6 +1407,8 @@ h3 {
 }
 
 @media (max-width: 760px) {
+  :root { --text-body: 17px; }
+
   .page-shell { width: min(100% - 36px, 1380px); }
 
   .site-header {
@@ -1449,7 +1420,7 @@ h3 {
   .site-nav {
     justify-self: end;
     gap: 17px;
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .site-nav a:last-child,
@@ -1478,7 +1449,32 @@ h3 {
 
   .display em { padding-left: 0; }
   .hero-bottom { gap: 32px; }
-  .hero-aside { display: none; }
+  .hero-aside {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 18px;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .profile-portrait {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin: 0;
+  }
+
+  .availability { grid-column: 1; }
+
+  .aside-note {
+    grid-column: 1;
+    align-self: end;
+    max-width: none;
+  }
 
   .manifesto,
   .section-heading,
@@ -1571,12 +1567,48 @@ h3 {
 
   .resume-contact { align-items: flex-start; }
   .resume-header h1 { font-size: 48px; }
+  .resume-kicker,
+  .resume-section > h2,
+  .resume-role-line p,
+  .resume-role-line > span,
+  .resume-code,
+  .resume-footer { font-size: 12px; }
+  .resume-contact { font-size: 13px; }
+  .resume-intro > p { font-size: 17px; }
   .resume-layout { grid-template-columns: 1fr; }
   .resume-sidebar { padding: 0; border: 0; }
   .resume-projects { grid-template-columns: 1fr; }
+  .resume-role-line h3 { font-size: 22px; }
+  .resume-experience ul,
+  .resume-projects p,
+  .resume-skill-group p { font-size: 15px; }
+  .resume-projects span { font-size: 12px; }
+  .resume-projects h3,
+  .resume-skill-group h3 { font-size: 18px; }
+  .resume-principles ol { font-size: 16px; }
+  .resume-credentials h3 { font-size: 16px; }
+  .resume-credentials p { font-size: 13px; }
   .credential-sheet-header { align-items: start; }
   .credential-sheet-header h2 { font-size: 42px; }
+  .credential-sheet-header > p { font-size: 15px; }
   .credential-sheet-featured article + article { border-left: 0; border-top: 1px solid rgba(251, 250, 245, 0.25); }
+  .credential-sheet-featured article > p,
+  .credential-sheet-featured article > div,
+  .credential-sheet-ledger article > span,
+  .credential-sheet-ledger article > p { font-size: 12px; }
+  .credential-sheet-featured h3 { font-size: 20px; }
+  .credential-sheet-ledger > h2,
+  .credential-sheet-foundation h2 { font-size: 12px; }
+  .credential-sheet-ledger article {
+    grid-template-columns: 26px 1fr;
+    min-height: 0;
+    padding: 16px 12px;
+  }
+  .credential-sheet-ledger article > p { grid-column: 2; }
+  .credential-sheet-ledger h3,
+  .credential-sheet-foundation h3 { font-size: 16px; }
+  .credential-sheet-ledger article div p,
+  .credential-sheet-foundation p { font-size: 13px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

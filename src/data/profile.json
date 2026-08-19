@@ -9,7 +9,7 @@
   "linkedin": "https://www.linkedin.com/in/haitransoftwareengineer",
   "availability": "Open to product, business and platform transformation opportunities",
   "headline": "I turn business ambition into products that create measurable value and help customers and teams grow.",
-  "summary": "Startup-minded product and cloud solutions architect with a full-stack engineering foundation, building in Vietnam's core-banking environment. I take ideas from concept to architecture, MVP and iteration, optimizing for time-to-value, reliability and measurable customer outcomes. My perspective spans banking, AI, real estate and experience with a leading Swiss proptech group.",
+  "summary": "Startup-minded product and cloud solutions architect with a full-stack engineering foundation in Vietnam's banking sector. I take ideas from concept to architecture, MVP and iteration, optimizing for time-to-value, reliability and measurable customer outcomes. My work spans millions-scale public platforms, T24 core-banking architecture, generative AI, real estate and experience with a leading Swiss proptech group.",
   "principles": [
     "Start with the customer outcome and the business value it creates.",
     "Build teams that grow together through mentoring, shared learning and open debate.",
@@ -23,9 +23,10 @@
       "summary": "Product, business and solution architecture for bank-wide transformation initiatives.",
       "bullets": [
         "Partner with the Board of Directors and cross-functional leaders to shape business and operating strategy; helped establish the business and operating foundation for GNM TPU and was selected as an inaugural HAGT-1 member supporting multiple teams.",
+        "Architect public web platforms for millions-scale traffic using AWS best practices; shape T24 core-banking hosting and coordinate directly with AWS global specialists and internal teams to improve resilience.",
         "Introduced VIB's first low-code platform to accelerate time-to-market, established its first AWS serverless architecture and led the first in-house generative AI initiatives from proof of concept to production use cases.",
-        "Own architecture and handover for internal products including the CA platform, Akabot automation and Mendix applications; recognized for impact with a company-sponsored trip to the United States.",
-        "Train HR teams in applied AI and represent VIB at Vietnamese universities, sharing practical AI experience, engineering culture and the future of work."
+        "Architect ViePro, the customer-facing chatbot for MyVIB, and Akabot OCR automation with VNG GreenNode and FPT; own architecture and handover across the CA platform and Mendix applications.",
+        "Train HR teams in applied AI and represent VIB at Vietnamese universities, sharing practical AI experience, engineering culture and the future of work; recognized for impact with a company-sponsored trip to the United States."
       ]
     },
     {
@@ -72,10 +73,10 @@
     },
     {
       "index": "02",
-      "name": "VIB Internal Product Platforms",
-      "type": "Bank-wide product and platform transformation",
-      "description": "A portfolio spanning the CA platform, Akabot automation, Mendix low-code applications, VIB's first serverless architecture and its first internal generative AI solution—designed for reuse, governance and faster outcomes.",
-      "stack": ["Product architecture", "Serverless", "GenAI", "Mendix", "Automation", "Governance"]
+      "name": "VIB Banking & Customer Platforms",
+      "type": "Core banking, public channels and automation",
+      "description": "Architecture across millions-scale public web traffic, T24 core-banking hosting, ViePro—the customer-facing chatbot for MyVIB—and Akabot OCR automation with VNG GreenNode and FPT, coordinated with AWS global specialists and internal teams.",
+      "stack": ["Product architecture", "T24 core banking", "AWS", "ViePro", "OCR automation", "Partner coordination"]
     },
     {
       "index": "03",

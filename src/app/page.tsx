@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/footer";
 import { SiteHeader } from "@/components/site-header";
@@ -32,14 +33,19 @@ export default function Home() {
             <span className="status-dot" aria-hidden="true" />
             <span>{profile.availability}</span>
           </div>
-          <div className="signal-card" aria-label="Professional focus">
-            <span className="signal-orbit orbit-one" />
-            <span className="signal-orbit orbit-two" />
-            <span className="signal-core">HTN</span>
-            <span className="signal-label signal-cloud">CLOUD</span>
-            <span className="signal-label signal-ai">AI</span>
-            <span className="signal-label signal-product">PRODUCT</span>
-          </div>
+          <figure className="profile-portrait">
+            <Image
+              src="/hai-tran-speaking-vib-ftu.jpg"
+              alt="Hai Tran speaking about AI and product building at a VIB and FTU event"
+              fill
+              priority
+              sizes="(max-width: 760px) 55vw, (max-width: 1050px) 220px, 270px"
+            />
+            <figcaption>
+              <span>VIB × FTU / 2026</span>
+              <strong>From learning to creating value</strong>
+            </figcaption>
+          </figure>
           <p className="aside-note">Based in {profile.location}. Connecting business strategy, customer needs and delivery.</p>
         </aside>
       </section>

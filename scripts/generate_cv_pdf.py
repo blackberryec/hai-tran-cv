@@ -353,24 +353,39 @@ def generate() -> None:
         y = draw_bullets(canvas, item["bullets"], MARGIN_X, y, main_w, size=7.05, leading=8.8)
         y -= 6
 
+    # Keep the print CV scannable: experience carries the evidence, while this
+    # compact index gives recruiters a quick map to the richer web case studies.
     y = draw_section_heading(canvas, "Selected outcomes", MARGIN_X, y + 1, main_w)
-    for project in profile["projects"]:
-        draw_label(canvas, project["index"], MARGIN_X, y + 1)
-        canvas.setFillColor(INK)
-        canvas.setFont("Times-Bold", 9.5)
-        canvas.drawString(MARGIN_X + 24, y, project["name"])
-        y -= 11
-        y = draw_wrapped(
+    outcome_gap = 12
+    outcome_w = (main_w - outcome_gap) / 2
+    outcome_row_h = 36
+    for index, project in enumerate(profile["projects"]):
+        column = index % 2
+        row = index // 2
+        x = MARGIN_X + column * (outcome_w + outcome_gap)
+        item_y = y - (row * outcome_row_h)
+        draw_label(canvas, project["index"], x, item_y + 1)
+        name_y = draw_wrapped(
             canvas,
-            project["description"],
-            MARGIN_X + 24,
-            y,
-            main_w - 24,
-            size=6.75,
-            leading=8.4,
+            project["name"],
+            x + 20,
+            item_y,
+            outcome_w - 20,
+            font="Times-Bold",
+            size=7.9,
+            leading=8.6,
+            color=INK,
+        )
+        draw_wrapped(
+            canvas,
+            project["type"],
+            x + 20,
+            name_y - 1,
+            outcome_w - 20,
+            size=5.6,
+            leading=6.5,
             color=MUTED,
         )
-        y -= 7
 
     # Sidebar rule
     canvas.setStrokeColor(LINE)
