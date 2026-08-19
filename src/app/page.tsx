@@ -12,33 +12,26 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-media" aria-hidden="true">
           <Image
-            className="hero-art hero-art-base"
+            className="hero-poster"
             src="/hai-tran-banking-architect-hero.jpg"
             alt=""
             fill
             priority
             sizes="100vw"
           />
-          <svg className="hero-flow-lines" viewBox="0 0 1600 900" preserveAspectRatio="none">
-            <path d="M700 298 C 936 214, 1090 368, 1600 220" />
-            <path d="M620 390 C 916 278, 1168 454, 1600 346" />
-            <path d="M760 486 C 1014 386, 1260 510, 1600 434" />
-          </svg>
-          <div className="hero-product">
-            <div className="hero-product-glass">
-              <span className="hero-product-kicker">LIVE PRODUCT SYSTEM</span>
-              <span className="hero-product-ring hero-product-ring-outer" />
-              <span className="hero-product-ring hero-product-ring-inner" />
-              <span className="hero-product-core">OUTCOME</span>
-              <span className="hero-product-node hero-product-node-product">PRODUCT</span>
-              <span className="hero-product-node hero-product-node-ai">AI</span>
-              <span className="hero-product-node hero-product-node-cloud">CLOUD</span>
-            </div>
-            <span className="hero-product-beam" />
-          </div>
-          <span className="hero-orbit hero-orbit-one" />
-          <span className="hero-orbit hero-orbit-two" />
-          <span className="hero-light" />
+          <video
+            className="hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster="/hai-tran-banking-architect-hero.jpg"
+            tabIndex={-1}
+          >
+            <source src="/hai-tran-vib-digital-product-hero.webm" type="video/webm" />
+            <source src="/hai-tran-vib-digital-product-hero.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className="hero-art-overlay" aria-hidden="true" />
         <div className="hero-index" aria-hidden="true">
