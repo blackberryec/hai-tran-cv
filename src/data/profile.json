@@ -1,0 +1,184 @@
+{
+  "name": "Hai Tran (Jeff)",
+  "shortName": "Hai Tran",
+  "initials": "HTN",
+  "role": "Senior Software Engineer & Solutions Architect",
+  "location": "Ho Chi Minh City, Vietnam",
+  "email": "jefftran.dev@gmail.com",
+  "github": "https://github.com/haitrannam",
+  "linkedin": "https://www.linkedin.com/in/haitransoftwareengineer",
+  "availability": "Open to architecture, platform and AI systems conversations",
+  "headline": "I design resilient cloud and AI systems - then ship them end to end.",
+  "summary": "Senior software engineer and solutions architect with experience building high-traffic marketplace products, AWS serverless platforms and AI-enabled systems. I work from requirements and architecture through implementation, testing, observability and production delivery.",
+  "principles": [
+    "Architecture must survive contact with delivery.",
+    "Governance belongs inside the system, not after it.",
+    "A useful AI workflow ends in observable proof."
+  ],
+  "experience": [
+    {
+      "period": "CURRENT",
+      "company": "Vietnam International Bank (VIB)",
+      "role": "Solutions Architect",
+      "summary": "Architecture and enablement for bank-scale cloud, product and AI initiatives.",
+      "bullets": [
+        "Translate complex business intent into buildable architectures across product, data, integration, risk and platform concerns.",
+        "Design AI-enabled workflows with explicit ownership, controls, human review gates and observable verification.",
+        "Build reusable systems for knowledge work, product discovery and executive communication using Next.js, TypeScript and agent workflows."
+      ]
+    },
+    {
+      "period": "2020 - 2025",
+      "company": "SMG Swiss Marketplace Group Vietnam",
+      "role": "Senior Software Engineer",
+      "summary": "Full-stack engineering for core real-estate marketplace services across search, alerts, valuation, seller leads and marketing tools.",
+      "bullets": [
+        "Led epics from requirements and system design through coding, automated testing, monitoring and cross-team production delivery.",
+        "Helped migrate legacy .NET workloads to AWS serverless services using Node.js, TypeScript, Lambda, Step Functions, DynamoDB and CDK.",
+        "Championed Search Alert Harmonization for high-load, multi-platform core services; mentored engineers, supported hiring and represented SMG Vietnam at AWS re:Invent 2023."
+      ]
+    },
+    {
+      "period": "2018 - 2020",
+      "company": "AS White Vietnam",
+      "role": "Software Engineer",
+      "summary": "Full-stack development and production support for an Australian financial-services technology portfolio.",
+      "bullets": [
+        "Maintained and improved seven internal products across .NET, Angular, SQL Server, Elasticsearch and integration services.",
+        "Designed and delivered the Claim Directory application from requirements and database design through front end, back end and deployment.",
+        "Applied clean architecture, automated testing and reusable design patterns to improve long-term maintainability."
+      ]
+    },
+    {
+      "period": "EARLY CAREER",
+      "company": "MTI Technology Vietnam / TPBank Savy / Freelance",
+      "role": "Software Engineer",
+      "summary": "Full-stack web, API and mobile product delivery across .NET, Java, Angular and Xamarin.",
+      "bullets": [
+        "Delivered customer applications and production landing experiences from design and requirements through testing and deployment.",
+        "Won first prize at the MTI Hackathon with a connected smart-garden system spanning software and hardware.",
+        "Led graduation and freelance projects covering e-commerce, automotive listings and cross-platform mobile applications."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "index": "01",
+      "name": "Search Alert Harmonization",
+      "type": "Core marketplace architecture",
+      "description": "A high-load, multi-platform redesign of SMG's core search-alert system, coordinated across teams and delivered from architecture through production verification.",
+      "stack": ["Node.js", "TypeScript", "AWS Lambda", "EventBridge", "DynamoDB", "AWS CDK"]
+    },
+    {
+      "index": "02",
+      "name": "FinHome Compass",
+      "type": "AI-enabled fintech product",
+      "description": "A privacy-aware decision-support product spanning strategy, React Native experience, backend contracts, AI orchestration and delivery verification.",
+      "stack": ["React Native", "TypeScript", "Python", "AWS", "AI agents"]
+    },
+    {
+      "index": "03",
+      "name": "AI Knowledge & Delivery Systems",
+      "type": "Enterprise AI infrastructure",
+      "description": "Reusable Next.js and agent-based systems that turn governed knowledge into product discovery, technical artifacts and executive communication.",
+      "stack": ["Next.js", "TypeScript", "LLM agents", "MCP", "Evaluations", "Quality gates"]
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "AWS cloud",
+      "items": ["Lambda", "API Gateway", "SQS", "SNS", "Step Functions", "EventBridge", "DynamoDB", "CDK", "CloudFormation", "Cognito", "CloudWatch"]
+    },
+    {
+      "name": "AI & data systems",
+      "items": ["LLM agents", "RAG", "Evaluations", "MCP", "Human-in-the-loop", "Elasticsearch", "DataDog", "Observability"]
+    },
+    {
+      "name": "Languages & frameworks",
+      "items": ["C#", "TypeScript", "JavaScript", "Java", "Python", ".NET", "Node.js", "Next.js", "Vue.js", "Angular", "React Native"]
+    },
+    {
+      "name": "Engineering practice",
+      "items": ["Microservices", "DDD", "SOLID", "Design patterns", "CI/CD", "Jest", "Cypress", "SpecFlow", "Load testing", "Mentoring"]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer - Associate",
+      "issuer": "Amazon Web Services",
+      "period": "Jan 2024 - Jan 2027"
+    },
+    {
+      "name": "Developing Serverless Solutions on AWS",
+      "issuer": "Amazon Web Services",
+      "period": "2022"
+    },
+    {
+      "name": "Xamarin Certification",
+      "issuer": "Xamarin",
+      "period": "2017"
+    }
+  ],
+  "education": [
+    {
+      "program": "Higher Diploma in Software Engineering",
+      "school": "FPT Aptech",
+      "period": "2016 - 2018"
+    },
+    {
+      "program": "Electronic Communication Engineering Technology",
+      "school": "Ho Chi Minh City University of Technology",
+      "period": "2015 - 2016"
+    },
+    {
+      "program": "Electronic Communication Engineering Technology",
+      "school": "Cao Thang Technical College",
+      "period": "2012 - 2015"
+    }
+  ],
+  "languages": ["English - professional working proficiency", "Vietnamese - native"],
+  "writing": [
+    {
+      "slug": "architecture-before-automation",
+      "number": "01",
+      "date": "18 AUG 2026",
+      "readTime": "5 MIN",
+      "title": "Architecture before automation",
+      "dek": "Why the fastest route to a dependable AI workflow starts with ownership, boundaries and proof.",
+      "body": [
+        "Automation amplifies the system it enters. If ownership is unclear, it accelerates confusion. If evidence is weak, it produces confident noise at scale. The first architecture question is therefore not which model to use. It is where judgment belongs.",
+        "I start by drawing three boundaries: what the machine may decide, what it may prepare for a person, and what it must never do without an explicit human gate. This turns an AI idea into an operating contract. Models can change; the contract remains legible.",
+        "The second move is to define proof before implementation. A workflow is not complete because an agent says it finished. Completion needs an observable artifact: a passing test, a rendered document, a reconciled dataset or a reviewed decision record.",
+        "Only then does automation become a force multiplier. The architecture creates the conditions for speed without surrendering accountability."
+      ]
+    },
+    {
+      "slug": "governance-is-a-product-feature",
+      "number": "02",
+      "date": "04 AUG 2026",
+      "readTime": "4 MIN",
+      "title": "Governance is a product feature",
+      "dek": "Trustworthy systems make their constraints visible in the experience and enforceable in the architecture.",
+      "body": [
+        "Governance fails when it lives only in a policy document. A production system needs constraints that are executable: permissions, data boundaries, approval states, audit events and recovery paths.",
+        "This is especially important in financial services. A disclosure shown at the end of a journey is weaker than a ranking system that cannot accept a hidden commercial preference. Architectural absence is often stronger than access control: if a prohibited pathway does not exist, it cannot be quietly enabled later.",
+        "Good governance also improves product quality. Clear provenance makes recommendations easier to explain. Human checkpoints make exceptions easier to handle. Decision records make the system easier to operate and improve.",
+        "The result is not extra compliance around the product. It is a better product - one whose promises are backed by its mechanics."
+      ]
+    },
+    {
+      "slug": "the-engineers-new-altitude",
+      "number": "03",
+      "date": "21 JUL 2026",
+      "readTime": "6 MIN",
+      "title": "The engineer's new altitude",
+      "dek": "AI expands implementation capacity, making intent, architecture and verification the scarce engineering skills.",
+      "body": [
+        "When implementation becomes cheaper, the engineer's responsibility does not shrink. It moves upward. Defining the right boundary, preserving system coherence and recognizing a false proof become more valuable than producing another isolated component quickly.",
+        "The strongest AI-assisted engineers operate like small technical organizations. They frame the problem, delegate bounded work, inspect the evidence, resolve integration risks and keep a durable record of why the system looks the way it does.",
+        "This changes the shape of expertise. Deep technical knowledge still matters, but it is connected to product judgment and operational awareness. The engineer must understand the consequence of a choice, not only its syntax.",
+        "The new altitude is not management. It is end-to-end ownership: staying close enough to the implementation to know what is true, while working high enough to keep the whole system aligned."
+      ]
+    }
+  ]
+}
