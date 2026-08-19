@@ -30,7 +30,6 @@ export default function Home() {
             tabIndex={-1}
           >
             <source src="/hai-tran-vib-digital-product-hero.mp4" type="video/mp4" />
-            <source src="/hai-tran-vib-digital-product-hero.webm" type="video/webm" />
           </video>
         </div>
         <div className="hero-art-overlay" aria-hidden="true" />
