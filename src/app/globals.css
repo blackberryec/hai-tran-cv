@@ -898,13 +898,12 @@ h3 {
   gap: 42px;
   padding: 52px 0;
   border-bottom: 1px solid var(--light-line);
-  transition: color 180ms ease, padding 180ms ease;
+  transition: color 180ms ease, border-color 180ms ease;
 }
 
 .project-row:hover {
-  padding-right: 20px;
-  padding-left: 20px;
   color: var(--acid);
+  border-bottom-color: rgba(168, 223, 85, 0.62);
 }
 
 .project-number,
@@ -950,6 +949,11 @@ h3 {
   font-family: var(--sans);
   font-size: 0.45em;
   transform: translateY(-0.65em);
+  transition: transform 180ms ease;
+}
+
+.project-title-link:hover span {
+  transform: translate(3px, -0.8em);
 }
 
 .project-description {

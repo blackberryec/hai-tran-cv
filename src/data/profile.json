@@ -22,7 +22,7 @@
       "role": "Solutions Architect",
       "summary": "Product, business and solution architecture for bank-wide transformation, with deep expertise in secure landing zones and hybrid, multi-cloud banking platforms.",
       "bullets": [
-        "Partner with the Board of Directors and cross-functional leaders to shape business and operating strategy; helped establish the business and operating foundation for GNM TPU and was selected as an inaugural HAGT-1 member supporting multiple teams.",
+        "Partner with the Board of Directors and cross-functional leaders to shape business and operating strategy; created strategy and technology narratives for the 2026 AGM and Board-level forums, helped host technical and other high-stakes leadership meetings, established the business and operating foundation for GNM TPU and joined the inaugural HAGT-1 cohort supporting multiple teams.",
         "Own landing-zone and hybrid, multi-cloud architecture spanning on-premises infrastructure, VIB private cloud, multiple regions, AWS, Google Cloud and Azure; architect millions-scale public web platforms and Temenos T24 core-banking hosting, coordinating AWS global specialists and internal teams for secure integration and resilience.",
         "Introduced VIB's first low-code platform to accelerate time-to-market, established its first AWS serverless architecture and led the first in-house generative AI initiatives from proof of concept to production use cases.",
         "Architect ViePro, the customer-facing chatbot for MyVIB, and Akabot OCR automation with VNG GreenNode and FPT; own architecture and handover across the CA platform and Mendix applications.",
@@ -68,11 +68,16 @@
     {
       "index": "01",
       "name": "Enterprise Strategy Activation",
-      "url": "",
+      "url": "https://theleader.vn/chu-tich-vib-tinh-than-tu-cuong-da-duoc-khac-vao-ma-gen-cua-ngan-hang-d45315.html",
       "type": "GNM TPU / HAGT-1 business and operating architecture",
-      "description": "Supported the Board of Directors in establishing the business and operating foundation for GNM TPU, then served as an inaugural HAGT-1 member helping teams turn strategy into coordinated action.",
-      "stack": ["Executive advisory", "Business architecture", "Operating model", "Strategy activation", "Cross-team enablement"],
-      "evidence": []
+      "description": "Created strategy and technology narratives for VIB's 2026 AGM and Board-level forums, and helped host technical and other high-stakes leadership meetings. Supported the Board in establishing GNM TPU's business and operating foundation, then served as an inaugural HAGT-1 member helping teams turn strategy into coordinated action.",
+      "stack": ["Executive advisory", "Business architecture", "Executive communications", "Technical facilitation", "Strategy activation"],
+      "evidence": [
+        {
+          "label": "VIB 2026 AGM & strategy context",
+          "url": "https://theleader.vn/chu-tich-vib-tinh-than-tu-cuong-da-duoc-khac-vao-ma-gen-cua-ngan-hang-d45315.html"
+        }
+      ]
     },
     {
       "index": "02",
