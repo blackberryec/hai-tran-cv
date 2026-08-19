@@ -12,7 +12,7 @@ export default function Home() {
       <section className="hero page-shell" aria-labelledby="hero-title">
         <Image
           className="hero-art"
-          src="/hai-tran-banking-architect-hero.png"
+          src="/hai-tran-banking-architect-hero.jpg"
           alt="Hai Tran presenting as a product, business and cloud solutions architect"
           fill
           priority
@@ -56,7 +56,7 @@ export default function Home() {
         <div className="about-portrait-wrap">
           <Image
             className="about-portrait"
-            src="/hai-tran-banking-architect-hero.png"
+            src="/hai-tran-banking-architect-hero.jpg"
             alt="Hai Tran, product, business and cloud solutions architect"
             fill
             sizes="(max-width: 760px) calc(100vw - 36px), 38vw"
