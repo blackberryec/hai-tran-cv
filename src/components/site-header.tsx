@@ -12,9 +12,9 @@ export function SiteHeader({ current = "portfolio" }: { current?: "portfolio" | 
           Work
         </Link>
         <Link className={current === "cv" ? "is-active" : ""} href="/cv">
-          Résumé
+          CV
         </Link>
-        <Link href="/#writing">Writing</Link>
+        <Link href="/#about">About</Link>
       </nav>
       <a className="header-cta" href="/Hai-Tran-Nam-CV-2026.pdf" download>
         Download CV <span aria-hidden="true">↓</span>

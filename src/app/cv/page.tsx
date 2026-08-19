@@ -69,7 +69,14 @@ export default function CvPage() {
               <div className="resume-projects">
                 {profile.projects.map((project) => (
                   <article key={project.name}>
-                    <div><span>{project.index}</span><h3>{project.name}</h3></div>
+                    <div>
+                      <span>{project.index}</span>
+                      <h3>
+                        {project.url ? (
+                          <a href={project.url} target="_blank" rel="noreferrer">{project.name} ↗</a>
+                        ) : project.name}
+                      </h3>
+                    </div>
                     <p>{project.description}</p>
                   </article>
                 ))}

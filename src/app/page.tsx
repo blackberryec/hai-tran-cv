@@ -6,48 +6,82 @@ import { profile } from "@/data/profile";
 
 export default function Home() {
   return (
-    <main>
+    <main className="home-page">
       <SiteHeader />
 
       <section className="hero page-shell" aria-labelledby="hero-title">
+        <Image
+          className="hero-art"
+          src="/hai-tran-banking-architect-hero.png"
+          alt="Hai Tran presenting as a product, business and cloud solutions architect"
+          fill
+          priority
+          sizes="(max-width: 760px) 100vw, 1380px"
+        />
+        <div className="hero-art-overlay" aria-hidden="true" />
         <div className="hero-index" aria-hidden="true">
           <span>PORTFOLIO</span>
           <span>2026 / 01</span>
         </div>
         <div className="hero-copy">
-          <p className="eyebrow reveal reveal-1">PRODUCT · BUSINESS · SOLUTION ARCHITECTURE</p>
-          <h1 id="hero-title" className="display reveal reveal-2">
-            Outcomes over
-            <br />
-            <em>output.</em>
-          </h1>
+          <div className="hero-topline reveal reveal-1">
+            <p className="eyebrow">OUTCOMES OVER OUTPUT.</p>
+            <div className="availability">
+              <span className="status-dot" aria-hidden="true" />
+              <span>{profile.availability}</span>
+            </div>
+          </div>
+          <div className="hero-identity reveal reveal-2">
+            <h1 id="hero-title">{profile.shortName}.</h1>
+            <p className="hero-role">
+              Product &amp; business architect.<br />
+              <em>Cloud solutions architect.</em>
+            </p>
+          </div>
           <div className="hero-bottom reveal reveal-3">
-            <p>{profile.summary}</p>
-            <a className="text-link" href="#work">
-              See how I create value <span aria-hidden="true">↘</span>
-            </a>
+            <p>{profile.headline}</p>
+            <div className="hero-actions">
+              <a className="hero-primary-action" href="#work">
+                View selected outcomes <span aria-hidden="true">↓</span>
+              </a>
+              <a className="hero-secondary-action" href="/Hai-Tran-Nam-CV-2026.pdf" download>
+                Download CV
+              </a>
+            </div>
           </div>
         </div>
-        <aside className="hero-aside reveal reveal-4">
-          <div className="availability">
-            <span className="status-dot" aria-hidden="true" />
-            <span>{profile.availability}</span>
+      </section>
+
+      <section className="about-section page-shell" id="about" aria-labelledby="about-heading">
+        <div className="about-portrait-wrap">
+          <Image
+            className="about-portrait"
+            src="/hai-tran-banking-architect-hero.png"
+            alt="Hai Tran, product, business and cloud solutions architect"
+            fill
+            sizes="(max-width: 760px) calc(100vw - 36px), 38vw"
+          />
+          <p>HAI · HO CHI MINH CITY · 2026</p>
+        </div>
+        <div className="about-copy">
+          <p className="section-number">ABOUT / HOW I WORK</p>
+          <h2 id="about-heading">
+            Product &amp; business architect.<br />
+            <span>Systems thinker.</span><br />
+            Builder for meaningful growth.
+          </h2>
+          <div className="about-body">
+            <p>I thrive where business ambition, customer needs and complex technology meet. I turn uncertain ideas into clear architectures, testable products and measurable outcomes.</p>
+            <p>Today I build inside Vietnam&apos;s core-banking environment—scaling AWS platforms, shaping responsible AI adoption and helping teams grow the confidence to deliver.</p>
           </div>
-          <figure className="profile-portrait">
-            <Image
-              src="/hai-tran-speaking-vib-ftu.jpg"
-              alt="Hai Tran speaking about AI and product building at a VIB and FTU event"
-              fill
-              priority
-              sizes="(max-width: 760px) 55vw, (max-width: 1050px) 220px, 270px"
-            />
-            <figcaption>
-              <span>VIB × FTU / 2026</span>
-              <strong>From learning to creating value</strong>
-            </figcaption>
-          </figure>
-          <p className="aside-note">Based in {profile.location}. Connecting business strategy, customer needs and delivery.</p>
-        </aside>
+          <blockquote>
+            “A great product is not measured by how much we ship, but by the customer success and human progress it creates.”
+          </blockquote>
+          <div className="about-actions">
+            <a className="about-primary" href={`mailto:${profile.email}`}>Say hello <span aria-hidden="true">↗</span></a>
+            <a className="about-secondary" href="/Hai-Tran-Nam-CV-2026.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
       </section>
 
       <section className="manifesto page-shell" aria-label="Working principles">
@@ -75,7 +109,13 @@ export default function Home() {
                 <div className="project-number">{project.index}</div>
                 <div>
                   <p className="project-type">{project.type}</p>
-                  <h3>{project.name}</h3>
+                  <h3>
+                    {project.url ? (
+                      <a className="project-title-link" href={project.url} target="_blank" rel="noreferrer">
+                        {project.name} <span aria-hidden="true">↗</span>
+                      </a>
+                    ) : project.name}
+                  </h3>
                   <p className="project-description">{project.description}</p>
                 </div>
                 <ul className="tag-list" aria-label={`${project.name} technologies`}>

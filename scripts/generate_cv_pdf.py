@@ -376,6 +376,12 @@ def generate() -> None:
             leading=8.6,
             color=INK,
         )
+        if project.get("url"):
+            canvas.linkURL(
+                project["url"],
+                (x + 20, name_y, x + outcome_w, item_y + 3),
+                relative=0,
+            )
         draw_wrapped(
             canvas,
             project["type"],

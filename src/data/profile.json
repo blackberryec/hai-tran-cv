@@ -67,6 +67,7 @@
     {
       "index": "01",
       "name": "Enterprise Strategy Activation",
+      "url": "",
       "type": "GNM TPU / HAGT-1 business and operating architecture",
       "description": "Supported the Board of Directors in establishing the business and operating foundation for GNM TPU, then served as an inaugural HAGT-1 member helping teams turn strategy into coordinated action.",
       "stack": ["Executive advisory", "Business architecture", "Operating model", "Strategy activation", "Cross-team enablement"]
@@ -74,6 +75,7 @@
     {
       "index": "02",
       "name": "VIB Banking & Customer Platforms",
+      "url": "",
       "type": "Core banking, public channels and automation",
       "description": "Architecture across millions-scale public web traffic, T24 core-banking hosting, ViePro—the customer-facing chatbot for MyVIB—and Akabot OCR automation with VNG GreenNode and FPT, coordinated with AWS global specialists and internal teams.",
       "stack": ["Product architecture", "T24 core banking", "AWS", "ViePro", "OCR automation", "Partner coordination"]
@@ -81,6 +83,7 @@
     {
       "index": "03",
       "name": "SMG Marketplace Transformation",
+      "url": "",
       "type": "Customer product and cloud modernization",
       "description": "Led Marketing Suite delivery and migration of core .NET services to AWS serverless architecture, strengthening customer campaign capabilities while enabling teams to learn and deliver with confidence.",
       "stack": ["Product delivery", "AWS", "Node.js", "TypeScript", "Serverless", "Team enablement"]
@@ -88,9 +91,10 @@
     {
       "index": "04",
       "name": "FinHome Compass",
-      "type": "Free public-interest real-estate product",
-      "description": "A free product exploring how clearer data, financial thinking and open public discussion can help people in Vietnam make better real-estate decisions—built with a team culture of mentoring, shared growth and social responsibility.",
-      "stack": ["Customer discovery", "Real estate", "Financial literacy", "Open discussion", "Mentoring", "Social impact"]
+      "url": "https://www.finhome.group/",
+      "type": "Free iOS home-buying decision platform",
+      "description": "A free, mobile-first product helping first-time buyers and small investors in Vietnam find a safer home-price range, test loan pressure and turn financial data into clear next actions. Now on iOS, with 1,000+ early registrations.",
+      "stack": ["Product strategy", "Mobile", "Financial modelling", "AI guidance", "Real estate", "Public benefit"]
     }
   ],
   "capabilities": [
