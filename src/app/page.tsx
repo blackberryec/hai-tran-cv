@@ -117,6 +117,16 @@ export default function Home() {
                     ) : project.name}
                   </h3>
                   <p className="project-description">{project.description}</p>
+                  {project.evidence.length > 0 ? (
+                    <div className="project-evidence" aria-label={`${project.name} public evidence`}>
+                      <span>Public context</span>
+                      {project.evidence.map((item) => (
+                        <a href={item.url} target="_blank" rel="noreferrer" key={item.url}>
+                          {item.label} <span aria-hidden="true">↗</span>
+                        </a>
+                      ))}
+                    </div>
+                  ) : null}
                 </div>
                 <ul className="tag-list" aria-label={`${project.name} technologies`}>
                   {project.stack.map((item) => <li key={item}>{item}</li>)}

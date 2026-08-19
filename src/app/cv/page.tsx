@@ -78,6 +78,15 @@ export default function CvPage() {
                       </h3>
                     </div>
                     <p>{project.description}</p>
+                    {project.evidence.length > 0 ? (
+                      <div className="resume-project-evidence">
+                        {project.evidence.map((item) => (
+                          <a href={item.url} target="_blank" rel="noreferrer" key={item.url}>
+                            Public context: {item.label} ↗
+                          </a>
+                        ))}
+                      </div>
+                    ) : null}
                   </article>
                 ))}
               </div>

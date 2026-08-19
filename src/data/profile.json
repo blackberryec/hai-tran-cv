@@ -20,10 +20,10 @@
       "period": "CURRENT",
       "company": "Vietnam International Bank (VIB)",
       "role": "Solutions Architect",
-      "summary": "Product, business and solution architecture for bank-wide transformation initiatives.",
+      "summary": "Product, business and solution architecture for bank-wide transformation, with deep expertise in secure landing zones and hybrid, multi-cloud banking platforms.",
       "bullets": [
         "Partner with the Board of Directors and cross-functional leaders to shape business and operating strategy; helped establish the business and operating foundation for GNM TPU and was selected as an inaugural HAGT-1 member supporting multiple teams.",
-        "Architect public web platforms for millions-scale traffic using AWS best practices; shape T24 core-banking hosting and coordinate directly with AWS global specialists and internal teams to improve resilience.",
+        "Own landing-zone and hybrid, multi-cloud architecture spanning on-premises infrastructure, VIB private cloud, multiple regions, AWS, Google Cloud and Azure; architect millions-scale public web platforms and Temenos T24 core-banking hosting, coordinating AWS global specialists and internal teams for secure integration and resilience.",
         "Introduced VIB's first low-code platform to accelerate time-to-market, established its first AWS serverless architecture and led the first in-house generative AI initiatives from proof of concept to production use cases.",
         "Architect ViePro, the customer-facing chatbot for MyVIB, and Akabot OCR automation with VNG GreenNode and FPT; own architecture and handover across the CA platform and Mendix applications.",
         "Train HR teams in applied AI and represent VIB at Vietnamese universities, sharing practical AI experience, engineering culture and the future of work; recognized for impact with a company-sponsored trip to the United States."
@@ -70,23 +70,40 @@
       "url": "",
       "type": "GNM TPU / HAGT-1 business and operating architecture",
       "description": "Supported the Board of Directors in establishing the business and operating foundation for GNM TPU, then served as an inaugural HAGT-1 member helping teams turn strategy into coordinated action.",
-      "stack": ["Executive advisory", "Business architecture", "Operating model", "Strategy activation", "Cross-team enablement"]
+      "stack": ["Executive advisory", "Business architecture", "Operating model", "Strategy activation", "Cross-team enablement"],
+      "evidence": []
     },
     {
       "index": "02",
       "name": "VIB Banking & Customer Platforms",
-      "url": "",
-      "type": "Core banking, public channels and automation",
-      "description": "Architecture across millions-scale public web traffic, T24 core-banking hosting, ViePro—the customer-facing chatbot for MyVIB—and Akabot OCR automation with VNG GreenNode and FPT, coordinated with AWS global specialists and internal teams.",
-      "stack": ["Product architecture", "T24 core banking", "AWS", "ViePro", "OCR automation", "Partner coordination"]
+      "url": "https://www.vib.com.vn/vn/goc-bao-chi/vib-trien-khai-corebanking-temenos-tren-nen-tang-aws",
+      "type": "Hybrid cloud, core banking, public channels and AI",
+      "description": "Architecture spanning multi-region landing zones, on-premises and private-cloud systems, AWS, Google Cloud and Azure integration; plus millions-scale public channels, Temenos T24 core banking, ViePro for MyVIB and OCR automation.",
+      "stack": ["Product architecture", "Hybrid multi-cloud", "Landing zones", "T24 core banking", "AWS", "ViePro", "OCR automation"],
+      "evidence": [
+        {
+          "label": "ViePro, AWS GenAI & MyVIB",
+          "url": "https://www.vib.com.vn/vn/goc-bao-chi/ngan-hang-dau-tien-tai-viet-nam-tich-hop-genai-cua-aws-cho-ung-dung-ngan-hang-so"
+        },
+        {
+          "label": "Temenos core banking on AWS",
+          "url": "https://www.vib.com.vn/vn/goc-bao-chi/vib-trien-khai-corebanking-temenos-tren-nen-tang-aws"
+        }
+      ]
     },
     {
       "index": "03",
       "name": "SMG Marketplace Transformation",
-      "url": "",
+      "url": "https://www.nexta.io/post/offering-listings-advertising-off-platform-smg",
       "type": "Customer product and cloud modernization",
       "description": "Led Marketing Suite delivery and migration of core .NET services to AWS serverless architecture, strengthening customer campaign capabilities while enabling teams to learn and deliver with confidence.",
-      "stack": ["Product delivery", "AWS", "Node.js", "TypeScript", "Serverless", "Team enablement"]
+      "stack": ["Product delivery", "AWS", "Node.js", "TypeScript", "Serverless", "Team enablement"],
+      "evidence": [
+        {
+          "label": "SMG off-platform advertising case",
+          "url": "https://www.nexta.io/post/offering-listings-advertising-off-platform-smg"
+        }
+      ]
     },
     {
       "index": "04",
@@ -94,7 +111,13 @@
       "url": "https://www.finhome.group/",
       "type": "Free iOS home-buying decision platform",
       "description": "A free, mobile-first product helping first-time buyers and small investors in Vietnam find a safer home-price range, test loan pressure and turn financial data into clear next actions. Now on iOS, with 1,000+ early registrations.",
-      "stack": ["Product strategy", "Mobile", "Financial modelling", "AI guidance", "Real estate", "Public benefit"]
+      "stack": ["Product strategy", "Mobile", "Financial modelling", "AI guidance", "Real estate", "Public benefit"],
+      "evidence": [
+        {
+          "label": "FinHome product website",
+          "url": "https://www.finhome.group/"
+        }
+      ]
     }
   ],
   "capabilities": [

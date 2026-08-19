@@ -694,6 +694,39 @@ h3 {
   font-size: var(--text-callout);
 }
 
+.project-evidence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 18px;
+  font-size: var(--text-footnote);
+}
+
+.project-evidence > span {
+  color: var(--acid);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-evidence a {
+  padding: 6px 10px;
+  border: 1px solid rgba(242, 238, 229, 0.22);
+  border-radius: 999px;
+  color: rgba(242, 238, 229, 0.84);
+  background: rgba(255, 255, 255, 0.04);
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.project-evidence a:hover {
+  border-color: rgba(168, 223, 85, 0.7);
+  background: rgba(168, 223, 85, 0.08);
+}
+
+.project-evidence a span { color: var(--acid); }
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -1505,6 +1538,19 @@ h3 {
   margin-bottom: 0;
   font-size: 8px;
   line-height: 1.4;
+}
+
+.resume-project-evidence {
+  display: grid;
+  gap: 3px;
+  margin-top: 7px;
+}
+
+.resume-project-evidence a {
+  color: var(--accent);
+  font-size: 7px;
+  font-weight: 650;
+  line-height: 1.25;
 }
 
 .resume-skill-group + .resume-skill-group { margin-top: 18px; }
