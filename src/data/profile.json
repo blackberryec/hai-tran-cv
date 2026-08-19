@@ -33,9 +33,10 @@
       "period": "2020 - 2025",
       "company": "SMG Swiss Marketplace Group Vietnam",
       "role": "Senior Software Engineer",
-      "summary": "Product engineering and technical leadership for high-traffic marketplace products and platform transformation.",
+      "summary": "Core marketplace engineering and product transformation across millions-scale search, alerting and advertising journeys.",
       "bullets": [
         "Received SMG's Transformation Team Award after the team exceeded delivery expectations for Marketing Suite; led customer campaign tools such as Demand Boost and built capability through shared learning.",
+        "Built and operated core search and search-alert capabilities for millions-scale marketplace traffic, applying Elasticsearch, performance engineering and elastic scaling to protect relevance and responsiveness under peak load.",
         "Led core migrations from .NET to AWS serverless architecture across Property Valuation, Seller Lead and related services using Node.js, TypeScript, Lambda, Step Functions, DynamoDB and CDK.",
         "Enabled engineers through mentoring and knowledge sharing, supported hiring, and represented SMG Vietnam at AWS re:Invent 2023 in Las Vegas."
       ]
@@ -96,8 +97,8 @@
       "name": "SMG Marketplace Transformation",
       "url": "https://www.nexta.io/post/offering-listings-advertising-off-platform-smg",
       "type": "Customer product and cloud modernization",
-      "description": "Led Marketing Suite delivery and migration of core .NET services to AWS serverless architecture, strengthening customer campaign capabilities while enabling teams to learn and deliver with confidence.",
-      "stack": ["Product delivery", "AWS", "Node.js", "TypeScript", "Serverless", "Team enablement"],
+      "description": "Core team delivery across millions-scale marketplace search, search alerts and Marketing Suite; combined Elasticsearch performance and elasticity with migration of core .NET functions to AWS serverless architecture.",
+      "stack": ["Product delivery", "Elasticsearch", "Search platforms", "Performance", "AWS", "Serverless", "Team enablement"],
       "evidence": [
         {
           "label": "SMG off-platform advertising case",
@@ -107,7 +108,7 @@
     },
     {
       "index": "04",
-      "name": "FinHome Compass",
+      "name": "FinHome Group",
       "url": "https://www.finhome.group/",
       "type": "Free iOS home-buying decision platform",
       "description": "A free, mobile-first product helping first-time buyers and small investors in Vietnam find a safer home-price range, test loan pressure and turn financial data into clear next actions. Now on iOS, with 1,000+ early registrations.",
@@ -171,41 +172,6 @@
       "name": "Data Engineering on AWS - Foundations",
       "issuer": "AWS Training and Certification",
       "period": "Jun 2025",
-      "credentialId": "",
-      "tier": "course"
-    },
-    {
-      "name": "Introduction to AWS Cloud WAN",
-      "issuer": "AWS Training and Certification",
-      "period": "Sep 2025",
-      "credentialId": "",
-      "tier": "course"
-    },
-    {
-      "name": "Introduction to AWS Global Accelerator",
-      "issuer": "AWS Training and Certification",
-      "period": "Sep 2025",
-      "credentialId": "",
-      "tier": "course"
-    },
-    {
-      "name": "Introduction to Amazon CloudFront",
-      "issuer": "AWS Training and Certification",
-      "period": "Sep 2025",
-      "credentialId": "",
-      "tier": "course"
-    },
-    {
-      "name": "Introduction to Amazon Direct Connect",
-      "issuer": "AWS Training and Certification",
-      "period": "Sep 2025",
-      "credentialId": "",
-      "tier": "course"
-    },
-    {
-      "name": "Introduction to Amazon VPC Lattice",
-      "issuer": "AWS Training and Certification",
-      "period": "Sep 2025",
       "credentialId": "",
       "tier": "course"
     },

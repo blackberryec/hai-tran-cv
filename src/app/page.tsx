@@ -9,14 +9,14 @@ export default function Home() {
     <main className="home-page">
       <SiteHeader />
 
-      <section className="hero page-shell" aria-labelledby="hero-title">
+      <section className="hero" aria-labelledby="hero-title">
         <Image
           className="hero-art"
           src="/hai-tran-banking-architect-hero.jpg"
           alt="Hai Tran presenting as a product, business and cloud solutions architect"
           fill
           priority
-          sizes="(max-width: 760px) 100vw, 1380px"
+          sizes="100vw"
         />
         <div className="hero-art-overlay" aria-hidden="true" />
         <div className="hero-index" aria-hidden="true">
@@ -26,10 +26,6 @@ export default function Home() {
         <div className="hero-copy">
           <div className="hero-topline reveal reveal-1">
             <p className="eyebrow">OUTCOMES OVER OUTPUT.</p>
-            <div className="availability">
-              <span className="status-dot" aria-hidden="true" />
-              <span>{profile.availability}</span>
-            </div>
           </div>
           <div className="hero-identity reveal reveal-2">
             <h1 id="hero-title">{profile.shortName}.</h1>
@@ -56,10 +52,10 @@ export default function Home() {
         <div className="about-portrait-wrap">
           <Image
             className="about-portrait"
-            src="/hai-tran-banking-architect-hero.jpg"
+            src="/hai-tran-banking-architect-portrait-3x4.jpg"
             alt="Hai Tran, product, business and cloud solutions architect"
             fill
-            sizes="(max-width: 760px) calc(100vw - 36px), 38vw"
+            sizes="(max-width: 760px) calc(100vw - 36px), 36vw"
           />
           <p>HAI · HO CHI MINH CITY · 2026</p>
         </div>
