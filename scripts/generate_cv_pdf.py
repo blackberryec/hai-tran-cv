@@ -296,7 +296,7 @@ def generate() -> None:
         profile["location"],
         profile["email"],
         "linkedin.com/in/haitransoftwareengineer",
-        "github.com/haitrannam",
+        "github.com/blackberryec/hai-tran-cv",
     ]
     contact_y = TOP - 9
     for line in contact_lines:
