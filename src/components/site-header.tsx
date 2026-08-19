@@ -9,7 +9,7 @@ export function SiteHeader({ current = "portfolio" }: { current?: "portfolio" | 
       </Link>
       <nav className="site-nav" aria-label="Primary navigation">
         <Link className={current === "portfolio" ? "is-active" : ""} href="/">
-          Portfolio
+          Work
         </Link>
         <Link className={current === "cv" ? "is-active" : ""} href="/cv">
           Résumé

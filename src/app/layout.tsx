@@ -24,15 +24,15 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hai-tran-cv.vercel.app"),
   title: {
-    default: "Hai Tran (Jeff) — Senior Software Engineer & Solutions Architect",
+    default: "Hai Tran (Jeff) — Product & Business Architect | Cloud Solutions Architect",
     template: "%s — Hai Tran (Jeff)",
   },
   description:
-    "Senior software engineer and solutions architect building AWS serverless platforms, AI-enabled systems and production software.",
+    "Product- and business-oriented architect turning strategy into customer outcomes, scalable platforms and measurable value.",
   openGraph: {
-    title: "Hai Tran (Jeff) — Senior Software Engineer & Solutions Architect",
+    title: "Hai Tran (Jeff) — Product & Business Architect | Cloud Solutions Architect",
     description:
-      "AWS serverless architecture, AI-enabled systems, product engineering and selected field notes.",
+      "Business architecture, product outcomes, platform transformation and selected field notes.",
     type: "website",
   },
   robots: { index: true, follow: true },

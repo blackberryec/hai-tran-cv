@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the public one-page engineering CV from src/data/profile.json."""
+"""Generate the public two-page engineering CV from src/data/profile.json."""
 
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ INK = HexColor("#151817")
 MUTED = HexColor("#555a57")
 LINE = HexColor("#c9cbc5")
 PAPER = HexColor("#fbfaf5")
-ACCENT = HexColor("#ed4e2a")
+ACCENT = HexColor("#087663")
 
 
 def fit_text(text: str, font: str, size: float, max_width: float) -> list[str]:
@@ -105,12 +105,176 @@ def draw_bullets(
     return y
 
 
+def draw_credentials_page(canvas: Canvas, profile: dict) -> None:
+    """Draw a focused credential record without crowding the engineering CV."""
+    canvas.setFillColor(PAPER)
+    canvas.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
+
+    flagship = [item for item in profile["certifications"] if item["tier"] == "flagship"]
+    learning = [item for item in profile["certifications"] if item["tier"] == "course"]
+
+    draw_label(canvas, "Credentials / Continuous Learning", MARGIN_X, TOP)
+    canvas.setFillColor(INK)
+    canvas.setFont("Times-Bold", 27)
+    canvas.drawString(MARGIN_X, TOP - 35, "Cloud-native proof.")
+    canvas.setFillColor(ACCENT)
+    canvas.drawString(MARGIN_X, TOP - 64, "Product-minded practice.")
+    draw_wrapped(
+        canvas,
+        "Verified certifications and structured learning across Kubernetes, AWS cloud, data engineering and applied AI.",
+        MARGIN_X,
+        TOP - 85,
+        PAGE_W - (2 * MARGIN_X),
+        font="Helvetica",
+        size=8.2,
+        leading=10.4,
+        color=MUTED,
+    )
+
+    canvas.setStrokeColor(INK)
+    canvas.setLineWidth(2.2)
+    canvas.line(MARGIN_X, TOP - 111, PAGE_W - MARGIN_X, TOP - 111)
+
+    featured_y = TOP - 138
+    draw_label(canvas, "Flagship credentials", MARGIN_X, featured_y)
+    card_y = featured_y - 110
+    card_gap = 12
+    card_w = (PAGE_W - (2 * MARGIN_X) - card_gap) / 2
+    for index, item in enumerate(flagship):
+        x = MARGIN_X + index * (card_w + card_gap)
+        canvas.setFillColor(INK)
+        canvas.roundRect(x, card_y, card_w, 92, 4, fill=1, stroke=0)
+        draw_label(canvas, "Verified / Flagship", x + 14, card_y + 73, color=ACCENT)
+        card_text_y = draw_wrapped(
+            canvas,
+            item["name"],
+            x + 14,
+            card_y + 56,
+            card_w - 28,
+            font="Times-Bold",
+            size=10.5,
+            leading=11.5,
+            color=PAPER,
+        )
+        card_text_y = draw_wrapped(
+            canvas,
+            f"{item['issuer']} / {item['period']}",
+            x + 14,
+            card_text_y - 2,
+            card_w - 28,
+            font="Helvetica",
+            size=6.4,
+            leading=7.6,
+            color=LINE,
+        )
+        if item["credentialId"]:
+            draw_wrapped(
+                canvas,
+                f"Credential: {item['credentialId']}",
+                x + 14,
+                max(card_y + 11, card_text_y - 2),
+                card_w - 28,
+                font="Helvetica",
+                size=5.8,
+                leading=6.8,
+                color=LINE,
+            )
+
+    ledger_y = card_y - 28
+    ledger_y = draw_section_heading(
+        canvas,
+        "Professional learning record",
+        MARGIN_X,
+        ledger_y,
+        PAGE_W - (2 * MARGIN_X),
+    )
+    column_gap = 22
+    column_w = (PAGE_W - (2 * MARGIN_X) - column_gap) / 2
+    rows_per_column = (len(learning) + 1) // 2
+    for index, item in enumerate(learning):
+        column = index // rows_per_column
+        row = index % rows_per_column
+        x = MARGIN_X + column * (column_w + column_gap)
+        y = ledger_y - (row * 49)
+        canvas.setFillColor(ACCENT)
+        canvas.rect(x, y - 24, 3, 31, fill=1, stroke=0)
+        name_y = draw_wrapped(
+            canvas,
+            item["name"],
+            x + 12,
+            y,
+            column_w - 12,
+            font="Times-Bold",
+            size=8.2,
+            leading=9.2,
+            color=INK,
+        )
+        draw_wrapped(
+            canvas,
+            f"{item['issuer']} / {item['period']}",
+            x + 12,
+            name_y - 1,
+            column_w - 12,
+            font="Helvetica",
+            size=5.9,
+            leading=7,
+            color=MUTED,
+        )
+
+    foundation_y = ledger_y - (rows_per_column * 49) - 5
+    foundation_y = draw_section_heading(
+        canvas,
+        "Education and languages",
+        MARGIN_X,
+        foundation_y,
+        PAGE_W - (2 * MARGIN_X),
+    )
+    education_w = 350
+    ey = foundation_y
+    for item in profile["education"]:
+        canvas.setFillColor(INK)
+        canvas.setFont("Times-Bold", 7.7)
+        canvas.drawString(MARGIN_X, ey, item["program"])
+        canvas.setFillColor(MUTED)
+        canvas.setFont("Helvetica", 5.9)
+        education_detail = f"{item['school']} / {item['period']}"
+        if item.get("honors"):
+            education_detail += f" / {item['honors']}"
+        canvas.drawString(MARGIN_X, ey - 9, education_detail)
+        ey -= 24
+
+    language_x = MARGIN_X + education_w + 20
+    ly = foundation_y
+    for language in profile["languages"]:
+        ly = draw_wrapped(
+            canvas,
+            language,
+            language_x,
+            ly,
+            PAGE_W - MARGIN_X - language_x,
+            font="Helvetica",
+            size=6.4,
+            leading=7.8,
+            color=MUTED,
+        )
+        ly -= 8
+
+    canvas.setStrokeColor(INK)
+    canvas.setLineWidth(2.2)
+    canvas.line(MARGIN_X, BOTTOM + 14, PAGE_W - MARGIN_X, BOTTOM + 14)
+    canvas.setFillColor(MUTED)
+    canvas.setFont("Helvetica", 6.3)
+    canvas.drawString(MARGIN_X, BOTTOM, "HAI TRAN (JEFF) / VERIFIED CREDENTIALS / 2026")
+    page_number = "02"
+    canvas.drawString(PAGE_W - MARGIN_X - stringWidth(page_number, "Helvetica", 6.3), BOTTOM, page_number)
+
+
 def generate() -> None:
     profile = json.loads(PROFILE_PATH.read_text(encoding="utf-8"))
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     canvas = Canvas(str(OUTPUT_PATH), pagesize=A4, pageCompression=1)
-    canvas.setTitle(f"{profile['name']} - Engineering CV 2026")
+    canvas.setTitle(f"{profile['name']} - Product and Architecture CV 2026")
     canvas.setAuthor(profile["name"])
     canvas.setSubject(profile["role"])
 
@@ -118,7 +282,7 @@ def generate() -> None:
     canvas.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
 
     # Header
-    draw_label(canvas, "Engineering CV / 2026", MARGIN_X, TOP)
+    draw_label(canvas, "Product and Architecture CV / 2026", MARGIN_X, TOP)
     canvas.setFillColor(INK)
     canvas.setFont("Times-Bold", 29)
     canvas.drawString(MARGIN_X, TOP - 34, profile["name"])
@@ -189,7 +353,7 @@ def generate() -> None:
         y = draw_bullets(canvas, item["bullets"], MARGIN_X, y, main_w, size=7.05, leading=8.8)
         y -= 6
 
-    y = draw_section_heading(canvas, "Selected systems", MARGIN_X, y + 1, main_w)
+    y = draw_section_heading(canvas, "Selected outcomes", MARGIN_X, y + 1, main_w)
     for project in profile["projects"]:
         draw_label(canvas, project["index"], MARGIN_X, y + 1)
         canvas.setFillColor(INK)
@@ -234,6 +398,8 @@ def generate() -> None:
 
     sy = draw_section_heading(canvas, "Certifications", side_x, sy + 2, side_w)
     for item in profile["certifications"]:
+        if item["tier"] != "flagship":
+            continue
         sy = draw_wrapped(
             canvas,
             item["name"],
@@ -271,7 +437,7 @@ def generate() -> None:
         )
         sy = draw_wrapped(
             canvas,
-            f"{item['school']} / {item['period']}",
+            f"{item['school']} / {item['period']}" + (f" / {item['honors']}" if item.get("honors") else ""),
             side_x,
             sy - 1,
             side_w,
@@ -303,10 +469,12 @@ def generate() -> None:
     canvas.line(MARGIN_X, BOTTOM + 14, PAGE_W - MARGIN_X, BOTTOM + 14)
     canvas.setFillColor(MUTED)
     canvas.setFont("Helvetica", 6.3)
-    canvas.drawString(MARGIN_X, BOTTOM, "HAI TRAN (JEFF) / SENIOR SOFTWARE ENGINEER / SOLUTIONS ARCHITECT / 2026")
+    canvas.drawString(MARGIN_X, BOTTOM, "HAI TRAN (JEFF) / PRODUCT / BUSINESS ARCHITECT / CLOUD SOLUTIONS ARCHITECT / 2026")
     page_number = "01"
     canvas.drawString(PAGE_W - MARGIN_X - stringWidth(page_number, "Helvetica", 6.3), BOTTOM, page_number)
 
+    canvas.showPage()
+    draw_credentials_page(canvas, profile)
     canvas.showPage()
     canvas.save()
 

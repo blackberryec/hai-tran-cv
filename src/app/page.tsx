@@ -14,16 +14,16 @@ export default function Home() {
           <span>2026 / 01</span>
         </div>
         <div className="hero-copy">
-          <p className="eyebrow reveal reveal-1">SENIOR SOFTWARE ENGINEER · SOLUTIONS ARCHITECT</p>
+          <p className="eyebrow reveal reveal-1">PRODUCT · BUSINESS · SOLUTION ARCHITECTURE</p>
           <h1 id="hero-title" className="display reveal reveal-2">
-            Systems with
+            Outcomes over
             <br />
-            <em>consequence.</em>
+            <em>output.</em>
           </h1>
           <div className="hero-bottom reveal reveal-3">
             <p>{profile.summary}</p>
             <a className="text-link" href="#work">
-              Explore selected work <span aria-hidden="true">↘</span>
+              See how I create value <span aria-hidden="true">↘</span>
             </a>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
             <span className="signal-label signal-ai">AI</span>
             <span className="signal-label signal-product">PRODUCT</span>
           </div>
-          <p className="aside-note">Based in {profile.location}. Working across architecture, product and delivery.</p>
+          <p className="aside-note">Based in {profile.location}. Connecting business strategy, customer needs and delivery.</p>
         </aside>
       </section>
 
@@ -60,8 +60,8 @@ export default function Home() {
       <section className="work-section" id="work" aria-labelledby="work-heading">
         <div className="page-shell">
           <div className="section-heading section-heading-dark">
-            <p className="section-number">02 / SELECTED SYSTEMS</p>
-            <h2 id="work-heading">Built from intent<br />to evidence.</h2>
+            <p className="section-number">02 / SELECTED OUTCOMES</p>
+            <h2 id="work-heading">Strategy turned<br />into outcomes.</h2>
           </div>
           <div className="project-list">
             {profile.projects.map((project) => (
@@ -84,7 +84,7 @@ export default function Home() {
       <section className="experience-section page-shell" aria-labelledby="experience-heading">
         <div className="section-heading">
           <p className="section-number">03 / EXPERIENCE</p>
-          <h2 id="experience-heading">Architecture is<br /><em>a delivery role.</em></h2>
+          <h2 id="experience-heading">Architecture that<br /><em>moves the business.</em></h2>
         </div>
         <div className="timeline">
           {profile.experience.map((item) => (
@@ -97,21 +97,21 @@ export default function Home() {
               <div className="timeline-detail">
                 <p>{item.summary}</p>
                 <ul>
-                  {item.bullets.slice(0, 2).map((bullet) => <li key={bullet}>{bullet}</li>)}
+                  {item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
                 </ul>
               </div>
             </article>
           ))}
         </div>
         <Link className="button-link" href="/cv">
-          View engineering résumé <span aria-hidden="true">→</span>
+          View product &amp; architecture CV <span aria-hidden="true">→</span>
         </Link>
       </section>
 
       <section className="capability-section page-shell" aria-labelledby="capability-heading">
         <div className="section-heading compact-heading">
           <p className="section-number">04 / CAPABILITIES</p>
-          <h2 id="capability-heading">The working stack.</h2>
+          <h2 id="capability-heading">How I create value.</h2>
         </div>
         <div className="capability-grid">
           {profile.capabilities.map((group, index) => (
@@ -124,10 +124,44 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="credentials-section page-shell" aria-labelledby="credentials-heading">
+        <div className="section-heading compact-heading">
+          <p className="section-number">05 / CREDENTIALS</p>
+          <h2 id="credentials-heading">Credentials behind<br /><em>the practice.</em></h2>
+        </div>
+        <div className="flagship-credentials">
+          {profile.certifications.filter((item) => item.tier === "flagship").map((item, index) => (
+            <article className="flagship-card" key={item.name}>
+              <div className="credential-badge" aria-hidden="true">{index === 0 ? "K8S" : "AWS"}</div>
+              <div>
+                <p className="credential-tier">Professional certification</p>
+                <h3>{item.name}</h3>
+                <p>{item.issuer}</p>
+              </div>
+              <div className="credential-proof">
+                <span>{item.period}</span>
+                <span>ID {item.credentialId}</span>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div className="learning-ledger">
+          {profile.certifications.filter((item) => item.tier === "course").map((item, index) => (
+            <article key={item.name}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <h3>{item.name}</h3>
+                <p>{item.issuer} · {item.period}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="writing-section page-shell" id="writing" aria-labelledby="writing-heading">
         <div className="section-heading compact-heading">
-          <p className="section-number">05 / FIELD NOTES</p>
-          <h2 id="writing-heading">Writing in 2026.</h2>
+          <p className="section-number">06 / FIELD NOTES</p>
+          <h2 id="writing-heading">Notes on products,<br />platforms and AI.</h2>
         </div>
         <div className="article-grid">
           {profile.writing.map((article) => (

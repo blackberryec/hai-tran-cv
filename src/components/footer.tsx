@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div>
-        <p className="eyebrow eyebrow-light">START A CONVERSATION</p>
+        <p className="eyebrow eyebrow-light">BUILD SOMETHING VALUABLE</p>
         <a className="footer-email" href={`mailto:${profile.email}`}>
           {profile.email}
         </a>

@@ -2,138 +2,239 @@
   "name": "Hai Tran (Jeff)",
   "shortName": "Hai Tran",
   "initials": "HTN",
-  "role": "Senior Software Engineer & Solutions Architect",
+  "role": "Product & Business Architect | Cloud Solutions Architect",
   "location": "Ho Chi Minh City, Vietnam",
   "email": "jefftran.dev@gmail.com",
   "github": "https://github.com/haitrannam",
   "linkedin": "https://www.linkedin.com/in/haitransoftwareengineer",
-  "availability": "Open to architecture, platform and AI systems conversations",
-  "headline": "I design resilient cloud and AI systems - then ship them end to end.",
-  "summary": "Senior software engineer and solutions architect with experience building high-traffic marketplace products, AWS serverless platforms and AI-enabled systems. I work from requirements and architecture through implementation, testing, observability and production delivery.",
+  "availability": "Open to product, business and platform transformation opportunities",
+  "headline": "I turn business ambition into products that create measurable value and help customers and teams grow.",
+  "summary": "Startup-minded product and cloud solutions architect with a full-stack engineering foundation, building in Vietnam's core-banking environment. I take ideas from concept to architecture, MVP and iteration, optimizing for time-to-value, reliability and measurable customer outcomes. My perspective spans banking, AI, real estate and experience with a leading Swiss proptech group.",
   "principles": [
-    "Architecture must survive contact with delivery.",
-    "Governance belongs inside the system, not after it.",
-    "A useful AI workflow ends in observable proof."
+    "Start with the customer outcome and the business value it creates.",
+    "Build teams that grow together through mentoring, shared learning and open debate.",
+    "Aim high, then take responsibility for the impact on customers and society."
   ],
   "experience": [
     {
       "period": "CURRENT",
       "company": "Vietnam International Bank (VIB)",
       "role": "Solutions Architect",
-      "summary": "Architecture and enablement for bank-scale cloud, product and AI initiatives.",
+      "summary": "Product, business and solution architecture for bank-wide transformation initiatives.",
       "bullets": [
-        "Translate complex business intent into buildable architectures across product, data, integration, risk and platform concerns.",
-        "Design AI-enabled workflows with explicit ownership, controls, human review gates and observable verification.",
-        "Build reusable systems for knowledge work, product discovery and executive communication using Next.js, TypeScript and agent workflows."
+        "Partner with the Board of Directors and cross-functional leaders to shape business and operating strategy; helped establish the business and operating foundation for GNM TPU and was selected as an inaugural HAGT-1 member supporting multiple teams.",
+        "Introduced VIB's first low-code platform to accelerate time-to-market, established its first AWS serverless architecture and led the first in-house generative AI initiatives from proof of concept to production use cases.",
+        "Own architecture and handover for internal products including the CA platform, Akabot automation and Mendix applications; recognized for impact with a company-sponsored trip to the United States.",
+        "Train HR teams in applied AI and represent VIB at Vietnamese universities, sharing practical AI experience, engineering culture and the future of work."
       ]
     },
     {
       "period": "2020 - 2025",
       "company": "SMG Swiss Marketplace Group Vietnam",
       "role": "Senior Software Engineer",
-      "summary": "Full-stack engineering for core real-estate marketplace services across search, alerts, valuation, seller leads and marketing tools.",
+      "summary": "Product engineering and technical leadership for high-traffic marketplace products and platform transformation.",
       "bullets": [
-        "Led epics from requirements and system design through coding, automated testing, monitoring and cross-team production delivery.",
-        "Helped migrate legacy .NET workloads to AWS serverless services using Node.js, TypeScript, Lambda, Step Functions, DynamoDB and CDK.",
-        "Championed Search Alert Harmonization for high-load, multi-platform core services; mentored engineers, supported hiring and represented SMG Vietnam at AWS re:Invent 2023."
+        "Received SMG's Transformation Team Award after the team exceeded delivery expectations for Marketing Suite; led customer campaign tools such as Demand Boost and built capability through shared learning.",
+        "Led core migrations from .NET to AWS serverless architecture across Property Valuation, Seller Lead and related services using Node.js, TypeScript, Lambda, Step Functions, DynamoDB and CDK.",
+        "Enabled engineers through mentoring and knowledge sharing, supported hiring, and represented SMG Vietnam at AWS re:Invent 2023 in Las Vegas."
       ]
     },
     {
       "period": "2018 - 2020",
       "company": "AS White Vietnam",
       "role": "Software Engineer",
-      "summary": "Full-stack development and production support for an Australian financial-services technology portfolio.",
+      "summary": "Product discovery, engineering and production ownership for an Australian financial-services portfolio.",
       "bullets": [
-        "Maintained and improved seven internal products across .NET, Angular, SQL Server, Elasticsearch and integration services.",
-        "Designed and delivered the Claim Directory application from requirements and database design through front end, back end and deployment.",
-        "Applied clean architecture, automated testing and reusable design patterns to improve long-term maintainability."
+        "Owned improvements across seven internal products, turning employee feedback and operational needs into maintainable product changes.",
+        "Designed and delivered the Claim Directory product from discovery and data design through front end, back end and production rollout.",
+        "Applied clean architecture, automated testing and reusable patterns to reduce delivery risk and strengthen long-term product ownership."
       ]
     },
     {
       "period": "EARLY CAREER",
       "company": "MTI Technology Vietnam / TPBank Savy / Freelance",
       "role": "Software Engineer",
-      "summary": "Full-stack web, API and mobile product delivery across .NET, Java, Angular and Xamarin.",
+      "summary": "End-to-end web, API and mobile product delivery across .NET, Java, Angular and Xamarin.",
       "bullets": [
-        "Delivered customer applications and production landing experiences from design and requirements through testing and deployment.",
+        "Turned customer needs into working applications, from discovery and experience design through testing and production delivery.",
         "Won first prize at the MTI Hackathon with a connected smart-garden system spanning software and hardware.",
-        "Led graduation and freelance projects covering e-commerce, automotive listings and cross-platform mobile applications."
+        "Led small teams across e-commerce, automotive listings and cross-platform mobile products, mentoring contributors and owning outcomes end to end."
       ]
     }
   ],
   "projects": [
     {
       "index": "01",
-      "name": "Search Alert Harmonization",
-      "type": "Core marketplace architecture",
-      "description": "A high-load, multi-platform redesign of SMG's core search-alert system, coordinated across teams and delivered from architecture through production verification.",
-      "stack": ["Node.js", "TypeScript", "AWS Lambda", "EventBridge", "DynamoDB", "AWS CDK"]
+      "name": "Enterprise Strategy Activation",
+      "type": "GNM TPU / HAGT-1 business and operating architecture",
+      "description": "Supported the Board of Directors in establishing the business and operating foundation for GNM TPU, then served as an inaugural HAGT-1 member helping teams turn strategy into coordinated action.",
+      "stack": ["Executive advisory", "Business architecture", "Operating model", "Strategy activation", "Cross-team enablement"]
     },
     {
       "index": "02",
-      "name": "FinHome Compass",
-      "type": "AI-enabled fintech product",
-      "description": "A privacy-aware decision-support product spanning strategy, React Native experience, backend contracts, AI orchestration and delivery verification.",
-      "stack": ["React Native", "TypeScript", "Python", "AWS", "AI agents"]
+      "name": "VIB Internal Product Platforms",
+      "type": "Bank-wide product and platform transformation",
+      "description": "A portfolio spanning the CA platform, Akabot automation, Mendix low-code applications, VIB's first serverless architecture and its first internal generative AI solution—designed for reuse, governance and faster outcomes.",
+      "stack": ["Product architecture", "Serverless", "GenAI", "Mendix", "Automation", "Governance"]
     },
     {
       "index": "03",
-      "name": "AI Knowledge & Delivery Systems",
-      "type": "Enterprise AI infrastructure",
-      "description": "Reusable Next.js and agent-based systems that turn governed knowledge into product discovery, technical artifacts and executive communication.",
-      "stack": ["Next.js", "TypeScript", "LLM agents", "MCP", "Evaluations", "Quality gates"]
+      "name": "SMG Marketplace Transformation",
+      "type": "Customer product and cloud modernization",
+      "description": "Led Marketing Suite delivery and migration of core .NET services to AWS serverless architecture, strengthening customer campaign capabilities while enabling teams to learn and deliver with confidence.",
+      "stack": ["Product delivery", "AWS", "Node.js", "TypeScript", "Serverless", "Team enablement"]
+    },
+    {
+      "index": "04",
+      "name": "FinHome Compass",
+      "type": "Free public-interest real-estate product",
+      "description": "A free product exploring how clearer data, financial thinking and open public discussion can help people in Vietnam make better real-estate decisions—built with a team culture of mentoring, shared growth and social responsibility.",
+      "stack": ["Customer discovery", "Real estate", "Financial literacy", "Open discussion", "Mentoring", "Social impact"]
     }
   ],
   "capabilities": [
     {
-      "name": "AWS cloud",
-      "items": ["Lambda", "API Gateway", "SQS", "SNS", "Step Functions", "EventBridge", "DynamoDB", "CDK", "CloudFormation", "Cognito", "CloudWatch"]
+      "name": "Product & business architecture",
+      "items": ["Customer outcomes", "Value discovery", "Product strategy", "Business capabilities", "Operating models", "Roadmaps", "Success measures"]
     },
     {
-      "name": "AI & data systems",
-      "items": ["LLM agents", "RAG", "Evaluations", "MCP", "Human-in-the-loop", "Elasticsearch", "DataDog", "Observability"]
+      "name": "Product leadership & process coaching",
+      "items": ["Product management", "Executive advisory", "Cross-functional alignment", "Process coaching", "Team enablement", "AI training", "Change adoption"]
     },
     {
-      "name": "Languages & frameworks",
-      "items": ["C#", "TypeScript", "JavaScript", "Java", "Python", ".NET", "Node.js", "Next.js", "Vue.js", "Angular", "React Native"]
+      "name": "Cloud & intelligent products",
+      "items": ["AWS serverless", "Cloud native", "Low code", "GenAI", "LLM agents", "RAG", "Human-in-the-loop", "Integration", "Observability"]
     },
     {
-      "name": "Engineering practice",
-      "items": ["Microservices", "DDD", "SOLID", "Design patterns", "CI/CD", "Jest", "Cypress", "SpecFlow", "Load testing", "Mentoring"]
+      "name": "Full-stack engineering",
+      "items": ["C#", ".NET", "TypeScript", "Node.js", "Next.js", "Python", "Microservices", "DDD", "CI/CD", "Automated testing", "AWS CDK"]
     }
   ],
   "certifications": [
     {
+      "name": "Kubernetes and Cloud Native Associate (KCNA)",
+      "issuer": "Cloud Native Computing Foundation / Linux Foundation",
+      "period": "Aug 2025",
+      "credentialId": "LF-0463wqzex4",
+      "tier": "flagship"
+    },
+    {
       "name": "AWS Certified Developer - Associate",
       "issuer": "Amazon Web Services",
-      "period": "Jan 2024 - Jan 2027"
+      "period": "Jan 2024 - Jan 2027",
+      "credentialId": "bca70d04287545f0873580d0a14d7059",
+      "tier": "flagship"
     },
     {
       "name": "Developing Serverless Solutions on AWS",
       "issuer": "Amazon Web Services",
-      "period": "2022"
+      "period": "2022",
+      "credentialId": "",
+      "tier": "course"
     },
     {
       "name": "Xamarin Certification",
       "issuer": "Xamarin",
-      "period": "2017"
+      "period": "2017",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Data Engineering on AWS - Foundations",
+      "issuer": "AWS Training and Certification",
+      "period": "Jun 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Introduction to AWS Cloud WAN",
+      "issuer": "AWS Training and Certification",
+      "period": "Sep 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Introduction to AWS Global Accelerator",
+      "issuer": "AWS Training and Certification",
+      "period": "Sep 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Introduction to Amazon CloudFront",
+      "issuer": "AWS Training and Certification",
+      "period": "Sep 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Introduction to Amazon Direct Connect",
+      "issuer": "AWS Training and Certification",
+      "period": "Sep 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Introduction to Amazon VPC Lattice",
+      "issuer": "AWS Training and Certification",
+      "period": "Sep 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Transform Your Everyday Business Processes with Agents",
+      "issuer": "Microsoft Learn",
+      "period": "Oct 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Create Agents in Microsoft Copilot Studio",
+      "issuer": "Microsoft Learn",
+      "period": "Oct 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Create and Publish Agents with Microsoft Copilot Studio",
+      "issuer": "Microsoft Learn",
+      "period": "Oct 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "Digital Literacy Capability Building Program (DCB)",
+      "issuer": "Vietnam International Bank (VIB)",
+      "period": "Sep 2025",
+      "credentialId": "",
+      "tier": "course"
+    },
+    {
+      "name": "AI Fluency: Framework and Foundations",
+      "issuer": "Anthropic",
+      "period": "2025",
+      "credentialId": "",
+      "tier": "course"
     }
   ],
   "education": [
     {
       "program": "Higher Diploma in Software Engineering",
       "school": "FPT Aptech",
-      "period": "2016 - 2018"
+      "period": "2016 - 2018",
+      "honors": "Graduated with Distinction"
     },
     {
       "program": "Electronic Communication Engineering Technology",
       "school": "Ho Chi Minh City University of Technology",
-      "period": "2015 - 2016"
+      "period": "2015 - 2016",
+      "honors": ""
     },
     {
       "program": "Electronic Communication Engineering Technology",
       "school": "Cao Thang Technical College",
-      "period": "2012 - 2015"
+      "period": "2012 - 2015",
+      "honors": ""
     }
   ],
   "languages": ["English - professional working proficiency", "Vietnamese - native"],
@@ -167,17 +268,17 @@
       ]
     },
     {
-      "slug": "the-engineers-new-altitude",
+      "slug": "the-architects-new-altitude",
       "number": "03",
       "date": "21 JUL 2026",
       "readTime": "6 MIN",
-      "title": "The engineer's new altitude",
-      "dek": "AI expands implementation capacity, making intent, architecture and verification the scarce engineering skills.",
+      "title": "The architect's new altitude",
+      "dek": "As AI expands implementation capacity, business judgment, product intent and verification become the scarce skills.",
       "body": [
-        "When implementation becomes cheaper, the engineer's responsibility does not shrink. It moves upward. Defining the right boundary, preserving system coherence and recognizing a false proof become more valuable than producing another isolated component quickly.",
-        "The strongest AI-assisted engineers operate like small technical organizations. They frame the problem, delegate bounded work, inspect the evidence, resolve integration risks and keep a durable record of why the system looks the way it does.",
-        "This changes the shape of expertise. Deep technical knowledge still matters, but it is connected to product judgment and operational awareness. The engineer must understand the consequence of a choice, not only its syntax.",
-        "The new altitude is not management. It is end-to-end ownership: staying close enough to the implementation to know what is true, while working high enough to keep the whole system aligned."
+        "When implementation becomes cheaper, responsibility does not shrink. It moves upward. Framing the right customer problem, defining a valuable outcome and recognizing false proof become more important than producing another isolated component quickly.",
+        "Strong AI-assisted teams operate like focused product organizations. They frame the opportunity, delegate bounded work, inspect evidence, resolve integration risks and preserve a clear record of why the product works the way it does.",
+        "Deep technical knowledge still matters, but it must connect to business judgment, customer empathy and operational awareness. An architect needs to understand the consequence of a choice, not only its syntax.",
+        "The new altitude is end-to-end ownership: close enough to delivery to know what is true, and high enough to keep customer value, team capability and business direction aligned."
       ]
     }
   ]

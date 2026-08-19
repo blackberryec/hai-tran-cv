@@ -3,8 +3,8 @@ import { SiteHeader } from "@/components/site-header";
 import { profile } from "@/data/profile";
 
 export const metadata: Metadata = {
-  title: "Engineering CV",
-  description: "Engineering résumé for Hai Tran (Jeff), senior software engineer and solutions architect.",
+  title: "Product & Architecture CV",
+  description: "Product, business and solution architecture CV for Hai Tran (Jeff).",
 };
 
 export default function CvPage() {
@@ -13,18 +13,18 @@ export default function CvPage() {
       <SiteHeader current="cv" />
       <div className="cv-toolbar page-shell">
         <div>
-          <p className="eyebrow">ENGINEERING CV · 2026 EDITION</p>
-          <p className="cv-toolbar-note">A concise, print-first view for hiring teams and collaborators.</p>
+          <p className="eyebrow">PRODUCT &amp; ARCHITECTURE CV · 2026</p>
+          <p className="cv-toolbar-note">A concise, outcome-led view for business, product and technology leaders.</p>
         </div>
         <a className="button-link button-dark" href="/Hai-Tran-Nam-CV-2026.pdf" download>
           Download PDF <span aria-hidden="true">↓</span>
         </a>
       </div>
 
-      <article className="resume-sheet" aria-label="Hai Tran Nam engineering résumé preview">
+      <article className="resume-sheet" aria-label="Hai Tran product and architecture CV preview">
         <header className="resume-header">
           <div>
-            <p className="resume-kicker">SENIOR SOFTWARE ENGINEER / SOLUTIONS ARCHITECT</p>
+            <p className="resume-kicker">PRODUCT / BUSINESS ARCHITECT · CLOUD SOLUTIONS ARCHITECT</p>
             <h1>{profile.name}</h1>
           </div>
           <div className="resume-contact">
@@ -38,8 +38,8 @@ export default function CvPage() {
         <section className="resume-intro">
           <p>{profile.summary}</p>
           <div className="resume-code" aria-label="Professional signature">
-            <span>ARCHITECTURE</span>
-            <span>× PRODUCT</span>
+            <span>BUSINESS VALUE</span>
+            <span>× CUSTOMER OUTCOMES</span>
             <span>× DELIVERY</span>
           </div>
         </section>
@@ -65,7 +65,7 @@ export default function CvPage() {
             </section>
 
             <section className="resume-section">
-              <h2>Selected systems</h2>
+              <h2>Selected outcomes</h2>
               <div className="resume-projects">
                 {profile.projects.map((project) => (
                   <article key={project.name}>
@@ -90,7 +90,7 @@ export default function CvPage() {
             <section className="resume-section resume-principles">
               <h2>Certifications</h2>
               <div className="resume-credentials">
-                {profile.certifications.map((item) => (
+                {profile.certifications.filter((item) => item.tier === "flagship").map((item) => (
                   <article key={item.name}>
                     <h3>{item.name}</h3>
                     <p>{item.issuer} · {item.period}</p>
@@ -104,7 +104,7 @@ export default function CvPage() {
                 {profile.education.map((item) => (
                   <article key={`${item.school}-${item.period}`}>
                     <h3>{item.program}</h3>
-                    <p>{item.school} · {item.period}</p>
+                    <p>{item.school} · {item.period}{item.honors ? ` · ${item.honors}` : ""}</p>
                   </article>
                 ))}
               </div>
@@ -119,11 +119,65 @@ export default function CvPage() {
         </div>
 
         <footer className="resume-footer">
-          <span>HAI TRAN (JEFF) / ENGINEERING CV / 2026</span>
+          <span>HAI TRAN (JEFF) / PRODUCT &amp; ARCHITECTURE CV / 2026</span>
           <span>01</span>
         </footer>
       </article>
-      <p className="cv-disclaimer page-shell">Profile content is intentionally concise. Contact Hai for a role-specific version or a detailed project walkthrough.</p>
+      <article className="resume-sheet resume-sheet-credentials" aria-label="Hai Tran credentials and continuing education">
+        <header className="credential-sheet-header">
+          <div>
+            <p className="resume-kicker">CREDENTIALS / CONTINUOUS LEARNING</p>
+            <h2>Cloud-native proof.<br /><em>Product-minded practice.</em></h2>
+          </div>
+          <p>Verified professional certifications and completion records, current through 2026.</p>
+        </header>
+        <section className="credential-sheet-featured">
+          {profile.certifications.filter((item) => item.tier === "flagship").map((item, index) => (
+            <article key={item.name}>
+              <span className="credential-sheet-code">0{index + 1}</span>
+              <p>PROFESSIONAL CERTIFICATION</p>
+              <h3>{item.name}</h3>
+              <p>{item.issuer}</p>
+              <div><span>{item.period}</span><span>ID {item.credentialId}</span></div>
+            </article>
+          ))}
+        </section>
+        <section className="credential-sheet-ledger">
+          <h2>Professional learning record</h2>
+          <div>
+            {profile.certifications.filter((item) => item.tier === "course").map((item, index) => (
+              <article key={item.name}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{item.name}</h3>
+                  <p>{item.issuer}</p>
+                </div>
+                <p>{item.period}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+        <section className="credential-sheet-foundation">
+          <div>
+            <h2>Education</h2>
+            {profile.education.map((item) => (
+              <article key={`${item.school}-${item.period}`}>
+                <h3>{item.program}</h3>
+                <p>{item.school} · {item.period}{item.honors ? ` · ${item.honors}` : ""}</p>
+              </article>
+            ))}
+          </div>
+          <div>
+            <h2>Languages</h2>
+            {profile.languages.map((item) => <p key={item}>{item}</p>)}
+          </div>
+        </section>
+        <footer className="resume-footer">
+          <span>HAI TRAN (JEFF) / CREDENTIALS / 2026</span>
+          <span>02</span>
+        </footer>
+      </article>
+      <p className="cv-disclaimer page-shell">Need more context? Contact Hai for a role-specific CV or a detailed outcome walkthrough.</p>
     </main>
   );
 }

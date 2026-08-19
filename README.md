@@ -1,9 +1,9 @@
-# Hai Tran Nam — Portfolio & Engineering CV
+# Hai Tran — Product, Business & Solutions Architecture Portfolio
 
 A two-view personal website built with Next.js 16:
 
 - `/` — editorial portfolio, experience and 2026 field notes
-- `/cv` — print-first engineering résumé preview
+- `/cv` — print-first product and architecture CV preview
 - `/Hai-Tran-Nam-CV-2026.pdf` — downloadable professional CV
 
 ## Local development
