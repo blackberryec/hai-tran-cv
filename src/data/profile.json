@@ -25,6 +25,7 @@
         "Partner with the Board of Directors and cross-functional leaders to shape business and operating strategy; created strategy and technology narratives for the 2026 AGM and Board-level forums, helped host technical and other high-stakes leadership meetings, established the business and operating foundation for GNM TPU and joined the inaugural HAGT-1 cohort supporting multiple teams.",
         "Own landing-zone and hybrid, multi-cloud architecture spanning on-premises infrastructure, VIB private cloud, multiple regions, AWS, Google Cloud and Azure; architect millions-scale public web platforms and Temenos T24 core-banking hosting, coordinating AWS global specialists and internal teams for secure integration and resilience.",
         "Introduced VIB's first low-code platform to accelerate time-to-market, established its first AWS serverless architecture and led the first in-house generative AI initiatives from proof of concept to production use cases.",
+        "Created HR Radar and led it from proof of concept to broad internal production adoption, establishing a new business-technology delivery model that reduced the application-development cycle from six months to two weeks, while enabling continuous iteration under rigorous engineering, security and maintainability standards.",
         "Architect ViePro, the customer-facing chatbot for MyVIB, and Akabot OCR automation with VNG GreenNode and FPT; own architecture and handover across the CA platform and Mendix applications.",
         "Train HR teams in applied AI and represent VIB at Vietnamese universities, sharing practical AI experience, engineering culture and the future of work; recognized for impact with a company-sponsored trip to the United States."
       ]
@@ -84,8 +85,8 @@
       "name": "VIB Banking & Customer Platforms",
       "url": "https://www.vib.com.vn/vn/goc-bao-chi/vib-trien-khai-corebanking-temenos-tren-nen-tang-aws",
       "type": "Hybrid cloud, core banking, public channels and AI",
-      "description": "Architecture spanning multi-region landing zones, on-premises and private-cloud systems, AWS, Google Cloud and Azure integration; plus millions-scale public channels, Temenos T24 core banking, ViePro for MyVIB and OCR automation.",
-      "stack": ["Product architecture", "Hybrid multi-cloud", "Landing zones", "T24 core banking", "AWS", "ViePro", "OCR automation"],
+      "description": "Architecture spanning multi-region landing zones, on-premises and private-cloud systems, AWS, Google Cloud and Azure integration; plus millions-scale public channels, Temenos T24 core banking, ViePro for MyVIB, OCR automation and HR Radar from proof of concept to broad internal production use.",
+      "stack": ["Product architecture", "Hybrid multi-cloud", "Landing zones", "T24 core banking", "AWS", "HR Radar", "ViePro", "OCR automation"],
       "evidence": [
         {
           "label": "ViePro, AWS GenAI & MyVIB",
