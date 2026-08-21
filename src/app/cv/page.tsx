@@ -58,7 +58,7 @@ export default function CvPage() {
                     <span>{item.period}</span>
                   </div>
                   <ul>
-                    {item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
+                    {item.cvBullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
                   </ul>
                 </article>
               ))}
@@ -139,7 +139,7 @@ export default function CvPage() {
           <span>01</span>
         </footer>
       </article>
-      <article className="resume-sheet resume-sheet-credentials" aria-label="Hai Tran credentials and continuing education">
+      <article id="credentials" className="resume-sheet resume-sheet-credentials" aria-label="Hai Tran credentials and continuing education">
         <header className="credential-sheet-header">
           <div>
             <p className="resume-kicker">CREDENTIALS / CONTINUOUS LEARNING</p>

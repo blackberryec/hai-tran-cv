@@ -66,12 +66,12 @@ export default function Home() {
         <div className="about-portrait-wrap">
           <Image
             className="about-portrait"
-            src="/hai-tran-banking-architect-portrait-3x4.jpg"
-            alt="Hai Tran, product, business and cloud solutions architect"
+            src="/hai-tran-speaking-vib-ftu.jpg"
+            alt="Hai Tran speaking about creating value with technology at a VIB and FTU event"
             fill
             sizes="(max-width: 760px) calc(100vw - 36px), 36vw"
           />
-          <p>HAI · HO CHI MINH CITY · 2026</p>
+          <p>VIB × FTU · HO CHI MINH CITY · 2026</p>
         </div>
         <div className="about-copy">
           <p className="section-number">ABOUT / HOW I WORK</p>
@@ -163,7 +163,7 @@ export default function Home() {
               <div className="timeline-detail">
                 <p>{item.summary}</p>
                 <ul>
-                  {item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
+                  {("webBullets" in item && item.webBullets ? item.webBullets : item.bullets).map((bullet) => <li key={bullet}>{bullet}</li>)}
                 </ul>
               </div>
             </article>
@@ -211,16 +211,13 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <div className="learning-ledger">
-          {profile.certifications.filter((item) => item.tier === "course").map((item, index) => (
-            <article key={item.name}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <div>
-                <h3>{item.name}</h3>
-                <p>{item.issuer} · {item.period}</p>
-              </div>
-            </article>
-          ))}
+        <div className="credentials-more">
+          <p>
+            Flagship certifications stay here. The complete professional learning record remains available in the detailed CV.
+          </p>
+          <Link className="button-link" href="/cv#credentials">
+            View all credentials <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </section>
 

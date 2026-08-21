@@ -350,7 +350,7 @@ def generate() -> None:
         canvas.setFont("Helvetica-Bold", 6.8)
         canvas.drawString(MARGIN_X, y, item["company"].upper())
         y -= 13
-        y = draw_bullets(canvas, item["bullets"], MARGIN_X, y, main_w, size=6.75, leading=8.25)
+        y = draw_bullets(canvas, item["cvBullets"], MARGIN_X, y, main_w, size=6.75, leading=8.25)
         y -= 4
 
     # Keep the print CV scannable: experience carries the evidence, while this

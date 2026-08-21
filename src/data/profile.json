@@ -9,7 +9,7 @@
   "linkedin": "https://www.linkedin.com/in/haitransoftwareengineer",
   "availability": "Open to product, business and platform transformation opportunities",
   "headline": "I turn business ambition into products that create measurable value and help customers and teams grow.",
-  "summary": "Startup-minded product and cloud solutions architect with a full-stack engineering foundation in Vietnam's banking sector. I take ideas from concept to architecture, MVP and iteration, optimizing for time-to-value, reliability and measurable customer outcomes. My work spans millions-scale public platforms, T24 core-banking architecture, generative AI, real estate and experience with a leading Swiss proptech group.",
+  "summary": "Product and business architect with a full-stack engineering foundation across retail banking, internal operations and cloud modernization. I turn ambiguous needs into secure products - from proof of concept to production - then improve adoption, economics and customer outcomes. At VIB, my scope spans executive strategy, T24 and hybrid-cloud foundations, millions-scale public channels, AI and an internal product portfolio built on AWS serverless, ECS and low-code. Earlier, I helped scale search and marketplace products for a leading Swiss proptech group.",
   "principles": [
     "Start with the customer outcome and the business value it creates.",
     "Build teams that grow together through mentoring, shared learning and open debate.",
@@ -20,26 +20,47 @@
       "period": "CURRENT",
       "company": "Vietnam International Bank (VIB)",
       "role": "Solutions Architect",
-      "summary": "Product, business and solution architecture for bank-wide transformation, with deep expertise in secure landing zones and hybrid, multi-cloud banking platforms.",
+      "summary": "Product, business and solution architecture across retail banking, employee platforms and bank-wide cloud modernization, turning early ideas into secure, cost-efficient products used in production.",
+      "webBullets": [
+        "Partner with the Board of Directors and cross-functional leaders on enterprise strategy; created technology narratives for the 2026 AGM and Board-level forums, helped host high-stakes technical meetings, established GNM TPU's business and operating foundation and supported teams through the inaugural HAGT-1 cohort.",
+        "Own hybrid multi-cloud and Temenos T24 platform architecture across on-premises infrastructure, VIB private cloud, multiple regions, AWS, Google Cloud and Azure; modernized millions-scale public channels from on-premises to AWS, EC2 to ECS and Oracle to PostgreSQL.",
+        "Took HR Radar from proof of concept to secure production and broad internal adoption, co-creating a repeatable business-technology delivery model that reduced lead time from roughly six months to two weeks against the internal delivery benchmark.",
+        "Architected an internal product portfolio spanning Handover, the document-management platform (CA), Mendix Internal Audit, SME InfoHub and Taskflow; established serverless-first AWS patterns with right-sized ECS, reducing infrastructure cost by up to 80% against the internal always-on ECS estimate.",
+        "Lead early low-code and generative AI adoption, including ViePro for MyVIB and OCR automation with VNG GreenNode and FPT; train HR teams and share applied AI practice at Vietnamese universities; received company recognition that included a sponsored trip to the United States."
+      ],
       "bullets": [
         "Partner with the Board of Directors and cross-functional leaders to shape business and operating strategy; created strategy and technology narratives for the 2026 AGM and Board-level forums, helped host technical and other high-stakes leadership meetings, established the business and operating foundation for GNM TPU and joined the inaugural HAGT-1 cohort supporting multiple teams.",
-        "Own landing-zone and hybrid, multi-cloud architecture spanning on-premises infrastructure, VIB private cloud, multiple regions, AWS, Google Cloud and Azure; architect millions-scale public web platforms and Temenos T24 core-banking hosting, coordinating AWS global specialists and internal teams for secure integration and resilience.",
-        "Introduced VIB's first low-code platform to accelerate time-to-market, established its first AWS serverless architecture and led the first in-house generative AI initiatives from proof of concept to production use cases.",
-        "Created HR Radar and led it from proof of concept to broad internal production adoption, establishing a new business-technology delivery model that reduced the application-development cycle from six months to two weeks, while enabling continuous iteration under rigorous engineering, security and maintainability standards.",
-        "Architect ViePro, the customer-facing chatbot for MyVIB, and Akabot OCR automation with VNG GreenNode and FPT; own architecture and handover across the CA platform and Mendix applications.",
+        "Own landing-zone and hybrid, multi-cloud architecture spanning on-premises infrastructure, VIB private cloud, multiple regions, AWS, Google Cloud and Azure; shape Temenos T24 hosting and coordinate AWS global specialists and internal teams on secure integration, resilience and platform improvement.",
+        "Modernized VIB's millions-scale public web estate from on-premises hosting to cloud, evolving workloads from EC2 to ECS and data services from Oracle to PostgreSQL to improve scalability, portability and operating efficiency.",
+        "Took HR Radar from proof of concept to secure production and broad internal adoption; co-created a business-technology delivery model that shortened lead time from roughly six months to two weeks while preserving security, maintainability and continuous iteration.",
+        "Architected an internal product portfolio: Handover for compliant employee offboarding and transfer of responsibilities; CA for document management; Internal Audit on Mendix low-code; SME InfoHub chatbot; and Taskflow for coordinated work management.",
+        "Established serverless-first AWS patterns with ECS where container workloads were justified, using current managed services and engineering controls to reduce infrastructure cost by up to 80% against a conventional always-on ECS baseline.",
+        "Architect ViePro, the customer-facing chatbot for MyVIB, and OCR automation with VNG GreenNode and FPT; introduced VIB's first low-code platform and led early in-house generative AI initiatives from proof of concept toward production use.",
         "Train HR teams in applied AI and represent VIB at Vietnamese universities, sharing practical AI experience, engineering culture and the future of work; recognized for impact with a company-sponsored trip to the United States."
+      ],
+      "cvBullets": [
+        "Shape product, business and solution architecture across VIB's retail-banking, employee-product and bank-wide transformation portfolio.",
+        "Own hybrid multi-cloud and T24 platform architecture; modernized millions-scale public channels from on-premises to AWS, EC2 to ECS and Oracle to PostgreSQL.",
+        "Took HR Radar from proof of concept to secure production and broad adoption, reducing delivery lead time from roughly six months to two weeks.",
+        "Architected Handover, CA document management, Mendix Internal Audit, SME InfoHub and Taskflow on serverless-first AWS and right-sized ECS patterns, cutting infrastructure cost by up to 80% versus an always-on ECS baseline.",
+        "Led early low-code and GenAI adoption, including ViePro for MyVIB and OCR automation; advised leaders, trained teams and supported enterprise strategy activation."
       ]
     },
     {
       "period": "2020 - 2025",
       "company": "SMG Swiss Marketplace Group Vietnam",
-      "role": "Senior Software Engineer",
+      "role": "Senior Software Engineer / Process Coach",
       "summary": "Core marketplace engineering and product transformation across millions-scale search, alerting and advertising journeys.",
       "bullets": [
         "Received SMG's Transformation Team Award after the team exceeded delivery expectations for Marketing Suite; led customer campaign tools such as Demand Boost and built capability through shared learning.",
         "Built and operated core search and search-alert capabilities for millions-scale marketplace traffic, applying Elasticsearch, performance engineering and elastic scaling to protect relevance and responsiveness under peak load.",
         "Led core migrations from .NET to AWS serverless architecture across Property Valuation, Seller Lead and related services using Node.js, TypeScript, Lambda, Step Functions, DynamoDB and CDK.",
         "Enabled engineers through mentoring and knowledge sharing, supported hiring, and represented SMG Vietnam at AWS re:Invent 2023 in Las Vegas."
+      ],
+      "cvBullets": [
+        "Built core search and search-alert capabilities for millions-scale marketplaces using Elasticsearch, performance engineering and elastic scaling.",
+        "Led .NET-to-AWS-serverless migrations across valuation, lead and marketplace services using TypeScript, Lambda, Step Functions, DynamoDB and CDK.",
+        "Earned the Transformation Team Award for Marketing Suite delivery; coached engineers and represented SMG Vietnam at AWS re:Invent 2023."
       ]
     },
     {
@@ -51,6 +72,11 @@
         "Owned improvements across seven internal products, turning employee feedback and operational needs into maintainable product changes.",
         "Designed and delivered the Claim Directory product from discovery and data design through front end, back end and production rollout.",
         "Applied clean architecture, automated testing and reusable patterns to reduce delivery risk and strengthen long-term product ownership."
+      ],
+      "cvBullets": [
+        "Owned improvements across seven Australian financial-services products, translating operational feedback into maintainable changes.",
+        "Designed and delivered Claim Directory from discovery and data design through full-stack implementation and production rollout.",
+        "Applied clean architecture, automated testing and reusable patterns to reduce delivery risk."
       ]
     },
     {
@@ -62,6 +88,11 @@
         "Turned customer needs into working applications, from discovery and experience design through testing and production delivery.",
         "Won first prize at the MTI Hackathon with a connected smart-garden system spanning software and hardware.",
         "Led small teams across e-commerce, automotive listings and cross-platform mobile products, mentoring contributors and owning outcomes end to end."
+      ],
+      "cvBullets": [
+        "Delivered web, API and mobile products across .NET, Java, Angular and Xamarin from discovery through production.",
+        "Won first prize at the MTI Hackathon with a connected smart-garden system spanning software and hardware.",
+        "Led small delivery teams and mentored contributors across commerce, automotive and mobile products."
       ]
     }
   ],
@@ -82,11 +113,11 @@
     },
     {
       "index": "02",
-      "name": "VIB Banking & Customer Platforms",
+      "name": "VIB Cloud & Digital Channels",
       "url": "https://www.vib.com.vn/vn/goc-bao-chi/vib-trien-khai-corebanking-temenos-tren-nen-tang-aws",
       "type": "Hybrid cloud, core banking, public channels and AI",
-      "description": "Architecture spanning multi-region landing zones, on-premises and private-cloud systems, AWS, Google Cloud and Azure integration; plus millions-scale public channels, Temenos T24 core banking, ViePro for MyVIB, OCR automation and HR Radar from proof of concept to broad internal production use.",
-      "stack": ["Product architecture", "Hybrid multi-cloud", "Landing zones", "T24 core banking", "AWS", "HR Radar", "ViePro", "OCR automation"],
+      "description": "Architecture across multi-region landing zones, on-premises and private-cloud systems, AWS, Google Cloud, Azure and Temenos T24. Modernized millions-scale public channels from on-premises to cloud, EC2 to ECS and Oracle to PostgreSQL, while shaping ViePro for MyVIB and OCR automation.",
+      "stack": ["Product architecture", "Hybrid multi-cloud", "Landing zones", "T24 core banking", "AWS", "ECS", "PostgreSQL", "ViePro"],
       "evidence": [
         {
           "label": "ViePro, AWS GenAI & MyVIB",
@@ -100,6 +131,15 @@
     },
     {
       "index": "03",
+      "name": "VIB Internal Product Platform",
+      "url": "",
+      "type": "POC-to-production, workflow modernization and cost architecture",
+      "description": "Built a repeatable path from business need to secure production across HR Radar, employee Handover, CA document management, Mendix Internal Audit, SME InfoHub and Taskflow. Serverless-first AWS patterns with right-sized ECS reduced infrastructure cost by up to 80% versus an always-on ECS baseline.",
+      "stack": ["Product discovery", "POC to production", "AWS serverless", "ECS", "Mendix", "GenAI", "Security by design", "Cost optimization"],
+      "evidence": []
+    },
+    {
+      "index": "04",
       "name": "SMG Marketplace Transformation",
       "url": "https://www.nexta.io/post/offering-listings-advertising-off-platform-smg",
       "type": "Customer product and cloud modernization",
@@ -113,7 +153,7 @@
       ]
     },
     {
-      "index": "04",
+      "index": "05",
       "name": "FinHome Group",
       "url": "https://www.finhome.group/",
       "type": "Free iOS home-buying decision platform",
@@ -130,15 +170,15 @@
   "capabilities": [
     {
       "name": "Product & business architecture",
-      "items": ["Customer outcomes", "Value discovery", "Product strategy", "Business capabilities", "Operating models", "Roadmaps", "Success measures"]
+      "items": ["Customer outcomes", "Value discovery", "Product strategy", "Product portfolios", "Business capabilities", "Operating models", "Value-risk trade-offs", "Success measures"]
     },
     {
       "name": "Product leadership & process coaching",
-      "items": ["Product management", "Executive advisory", "Cross-functional alignment", "Process coaching", "Team enablement", "AI training", "Change adoption"]
+      "items": ["POC to production", "Product management", "Executive advisory", "Process redesign", "Cross-functional alignment", "Partner coordination", "Team enablement", "Change adoption"]
     },
     {
       "name": "Cloud & intelligent products",
-      "items": ["AWS serverless", "Cloud native", "Low code", "GenAI", "LLM agents", "RAG", "Human-in-the-loop", "Integration", "Observability"]
+      "items": ["AWS serverless", "ECS", "Cloud modernization", "Cost architecture", "Low code", "GenAI", "RAG", "Human-in-the-loop", "Integration", "Observability"]
     },
     {
       "name": "Full-stack engineering",
