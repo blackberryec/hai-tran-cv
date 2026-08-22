@@ -463,7 +463,7 @@ h3 {
 
 .about-portrait {
   object-fit: cover;
-  object-position: 73% center;
+  object-position: center;
 }
 
 .about-portrait-wrap > p {
@@ -1728,7 +1728,7 @@ h3 {
   }
 
   .about-portrait {
-    object-position: 73% center;
+    object-position: center;
   }
 
   .about-copy h2 {

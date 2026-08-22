@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hai-tran.vercel.app"),
+  metadataBase: new URL("https://hai-tran-cv.vercel.app"),
   title: {
     default: "Hai Tran (Jeff) — Product & Business Architect | Cloud Solutions Architect",
     template: "%s — Hai Tran (Jeff)",

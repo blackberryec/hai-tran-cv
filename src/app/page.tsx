@@ -66,7 +66,7 @@ export default function Home() {
         <div className="about-portrait-wrap">
           <Image
             className="about-portrait"
-            src="/hai-tran-speaking-vib-ftu.jpg"
+            src="/hai-tran-speaking-vib-ftu-3x4.jpg"
             alt="Hai Tran speaking about creating value with technology at a VIB and FTU event"
             fill
             sizes="(max-width: 760px) calc(100vw - 36px), 36vw"
